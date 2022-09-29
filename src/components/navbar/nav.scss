@@ -1,0 +1,142 @@
+@import "../../index.scss";
+
+.navbar {
+  left: 0;
+  padding: 30px 75px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+  z-index: 10;
+
+  img {
+    cursor: pointer;
+    left: 50%;
+    position: absolute;
+    top: 20px;
+    transform: translateX(-50%);
+    transition: all 0.3s ease-in-out;
+    width: 213px;
+  }
+  .media-box {
+    position: absolute;
+    right: 95px;
+    top: 23px;
+    svg {
+      transition: all 0.3s ease-in-out;
+      font-size: 22px;
+      padding: 0px 6px;
+      color: white;
+      cursor: pointer;
+      &:hover {
+        color: $light-green;
+      }
+    }
+  }
+  h3 {
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+    top: 42px;
+    font-size: 15px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    padding: 5px 25px 20px;
+    border-radius: 0px 0px 35px 35px;
+    font-family: "Josefin Sans", sans-serif;
+    &:hover {
+      border-radius: 35px 35px 35px 0px;
+      padding: 15px 25px 10px;
+      background-color: $main-green;
+      color: white;
+    }
+  }
+}
+
+nav .menu-icon {
+  cursor: pointer;
+  padding: 28px 20px;
+  height: 25px;
+  left: 52px;
+  overflow: hidden;
+  position: absolute;
+  text-indent: -12345px;
+  top: 47px;
+  width: 35px;
+}
+nav .menu-icon .nav-icon {
+  background-color: white;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background 0.2s ease-out;
+  width: 30px;
+}
+nav .menu-icon .nav-icon:before,
+nav .menu-icon .nav-icon:after {
+  background: #f8f8f8;
+  content: "";
+  display: block;
+  height: 70%;
+  position: absolute;
+  transition: all ease-out 0.2s;
+  width: 100%;
+}
+nav .menu-icon .nav-icon:before {
+  top: 12px;
+  background-color: white;
+}
+nav .menu-icon .nav-icon:after {
+  top: -12px;
+  background-color: white;
+}
+
+.navbar-transparent {
+  background-color: rgba($color: #000000, $alpha: 0);
+  height: 170px;
+}
+.navbar-white {
+  background-color: white;
+  height: 50px;
+  box-shadow: 0 0 5px 5px rgb(0 0 0 / 30%);
+  img {
+    width: 113px;
+  }
+  .media-box {
+    svg {
+      color: $main-dark;
+      font-size: 15px;
+      &:hover {
+        color: $main-green;
+      }
+    }
+  }
+  h3 {
+    color: white;
+    background-color: $main-dark;
+    font-size: 12px;
+    padding: 5px 18px 13px;
+    &:hover {
+      border-radius: 35px 35px 35px 0px;
+      padding: 11px 18px 7px;
+      background-color: $main-dark;
+    }
+  }
+}
+
+.menu-hidden {
+  transition: all 1s ease-in-out;
+  left: -100%;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: $light-gray;
+}
+.side-menu {
+  width: 100%;
+  height: 100vh;
+  background-color: $light-gray;
+  transition: all 1s ease-in-out;
+  left: 0;
+  position: fixed;
+}
