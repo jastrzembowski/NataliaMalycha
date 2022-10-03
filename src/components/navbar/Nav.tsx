@@ -6,10 +6,10 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import sidepic from "../../images/sidepic.jpg";
 import nmlogo from "../../images/nmlogo.png";
 import nmlogowhite from "../../images/nmlogowhite.png";
 import "./nav.scss";
-import "./nav.css";
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
@@ -32,8 +32,11 @@ const Nav = () => {
           navbar ? "navbar navbar-white" : " navbar navbar-transparent"
         }
       >
-        <label className="menu-icon" onClick={()=>setActive(true)}>
-          <span className="nav-icon" ></span>
+        <label
+          className="menu-icon"
+          onClick={active ? () => setActive(false) : () => setActive(true)}
+        >
+          <span className="nav-icon"></span>
         </label>
         <img
           src={navbar ? nmlogo : nmlogowhite}
@@ -47,7 +50,33 @@ const Nav = () => {
         </div>
         <h3>MEET ME</h3>
       </nav>
-      <article className={!active ? "menu-hidden" : "side-menu"}></article>
+      <article className={!active ? "menu-hidden" : "side-menu"}>
+        <label
+          className="side-icon"
+          onClick={active ? () => setActive(false) : () => setActive(true)}
+        >
+          <span className="side-nav-icon"></span>
+        </label>
+        <img src={nmlogo} alt="logo" className="side-logo" />
+        <div className="side-box">
+          <ul className="side-texts">
+            <li>O mnie</li>
+            <li>Usługi</li>
+            <li>Trójmiasto</li>
+            <li>Oferty</li>
+            <li>Kontakt</li>
+          </ul>
+          <div className="side-offer-box">
+            <h3>Polecana oferta</h3>
+            <img src={sidepic} alt="sidepic"></img>
+            <h4>Apartament <br/>w Sopocie</h4>
+            <button>
+              Zobacz więcej
+            </button>
+          </div>
+
+        </div>
+      </article>
     </>
   );
 };

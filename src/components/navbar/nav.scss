@@ -63,7 +63,28 @@ nav .menu-icon {
   text-indent: -12345px;
   top: 47px;
   width: 35px;
+  &:hover {
+    .nav-icon {
+      height: 2.5px;
+      background-color: $light-pink;
+    }
+    .nav-icon:before {
+      transform: rotateZ(45deg) scaleX(0.8) translate(-20px, 8px);
+      margin-left: 11px;
+      background-color: $light-pink;
+
+      width: 24px;
+    }
+    .nav-icon:after {
+      transform: rotateZ(-45deg) scaleX(0.8) translate(-20px, -8px);
+      margin-left: 11px;
+      background-color: $light-pink;
+
+      width: 24px;
+    }
+  }
 }
+
 nav .menu-icon .nav-icon {
   background-color: white;
   display: block;
@@ -71,6 +92,7 @@ nav .menu-icon .nav-icon {
   position: relative;
   transition: background 0.2s ease-out;
   width: 30px;
+  transition: 0.5s ease-in-out;
 }
 nav .menu-icon .nav-icon:before,
 nav .menu-icon .nav-icon:after {
@@ -81,6 +103,8 @@ nav .menu-icon .nav-icon:after {
   position: absolute;
   transition: all ease-out 0.2s;
   width: 100%;
+  height: 2px;
+  transition: 0.5s ease-in-out;
 }
 nav .menu-icon .nav-icon:before {
   top: 12px;
@@ -99,6 +123,14 @@ nav .menu-icon .nav-icon:after {
   background-color: white;
   height: 50px;
   box-shadow: 0 0 5px 5px rgb(0 0 0 / 30%);
+  .menu-icon .nav-icon,
+  .menu-icon .nav-icon:before,
+  .menu-icon .nav-icon:after {
+    background-color: $main-dark;
+  }
+  .menu-icon .nav-icon {
+    transform: translateY(-16px);
+  }
   img {
     width: 113px;
   }
@@ -125,18 +157,170 @@ nav .menu-icon .nav-icon:after {
 }
 
 .menu-hidden {
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   left: -100%;
   position: fixed;
   width: 100%;
   height: 100vh;
+  z-index: 60;
   background-color: $light-gray;
 }
 .side-menu {
   width: 100%;
   height: 100vh;
-  background-color: $light-gray;
-  transition: all 1s ease-in-out;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
   left: 0;
+  z-index: 60;
   position: fixed;
+  display: flex;
+  flex-direction: column;
+
+  .side-icon {
+    cursor: pointer;
+    padding: 28px 20px;
+    height: 25px;
+    left: 52px;
+    overflow: hidden;
+    position: absolute;
+    text-indent: -12345px;
+    top: 47px;
+    width: 35px;
+    &:hover {
+      .side-nav-icon,
+      .side-nav-icon:after {
+        background-color: $light-pink;
+      }
+    }
+  }
+  .side-icon .side-nav-icon {
+    background-color: $main-dark;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background 0.2s ease-out;
+    width: 30px;
+    transform: rotate(45deg);
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+  }
+  .side-icon .side-nav-icon:before,
+  .side-icon .side-nav-icon:after {
+    background: $main-dark;
+    content: "";
+    display: block;
+    height: 70%;
+    position: absolute;
+    transition: all ease-out 0.2s;
+    width: 100%;
+    height: 2px;
+    transition: 0.5s ease-in-out;
+  }
+  .side-icon .side-nav-icon:before {
+    top: 12px;
+    background-color: $main-dark;
+    opacity: 0;
+  }
+  .side-icon .side-nav-icon:after {
+    top: 0px;
+    background-color: $main-dark;
+    transform: rotate(90deg);
+  }
+}
+
+.side-logo {
+  width: 100px;
+  position: absolute;
+  align-self: center;
+  padding-top: 40px;
+}
+.side-box {
+  margin: 8% 10% 6%;
+  width: 80%;
+  height: 86%;
+  background-image: url("../../images/pattern-white.png");
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.side-texts {
+  grid-area: 1 / 1 / 2 / 2;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-left: 100px;
+
+  li {
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 36px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 800;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      color: $main-green;
+    }
+  }
+}
+.side-offer-box {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 10% 15%;
+  text-align: center;
+  align-items: center;
+  h3 {
+    font-size: 40px;
+    margin: 10px;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 34px;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    color: $main-green;
+    margin: 12px;
+    line-height: 1.2;
+  }
+  img {
+    width: 90%;
+    height: 200px;
+    object-fit: cover;
+  }
+  button {
+    background-color: $light-green;
+    border: 0px;
+    padding: 15px;
+    width: 300px;
+    text-align: left;
+    font-family: "Josefin Sans", sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+    border: none;
+    &:after {
+      content: url("../../images/assets/arrow-right.svg");
+      position: absolute;
+      transition: all 0.5s ease-in-out;
+
+      transform: translateX(120px) translateY(-2px) scaleX(0.9);
+    }
+    &:hover {
+      color: white;
+      border: none;
+      background-color: #56726b;
+      &::after {
+        transform: translateX(115px) translateY(-2px) scaleX(1.3);
+        transition: all 0.5s ease-in-out;
+        filter: invert(0%) sepia(0%) saturate(1112%) hue-rotate(0)
+          brightness(561%) contrast(198%);
+      }
+    }
+  }
 }
