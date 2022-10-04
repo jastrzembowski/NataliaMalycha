@@ -1,8 +1,11 @@
 import React from "react";
 import "./home.scss";
+import {Link} from "react-router-dom";
 import natmain from "../../images/natmain.png";
 import servmain from "../../images/servmain.png";
 import Footer from "../footer/Footer";
+import OfferSlider from "./offerslider/OfferSlider";
+
 const Home = () => {
   return (
     <>
@@ -51,28 +54,32 @@ const Home = () => {
       <article className="main-service">
         <div className="header-service__title">
           <p>
-            „Połączenie sił to początek, pozostanie razem to postęp,
-            <br /> wspólna praca to sukces” - Henry Ford
+            Doświadczenie w branży umożliwia mi precyzyjnie dopasować strategię
+            działań do oczekiwań Klientów i sytuacji na rynku nieruchomości.
+            <br />
+            Do każdej transakcji podchodzę indywidualnie – wiem że w każdej z
+            nich kryje się inna historia, za którą stoją konkretni ludzie.
           </p>
           <h3>
-            Pierwszy krok <br />
-            do realizacji Twoich marzeń
+            Dlaczego warto <br /> ze mną współpracować?
           </h3>
         </div>
         <div className="header-service__text">
           <div className="service-text__container">
-            <h3>O MNIE</h3>
+            <h3>O USŁUGACH</h3>
             <h4>
-              Property Advisor & Branch Manager in Gdynia w firmie InVilla
-              Nieruchomości.
+              W mojej pracy stawiam przede wszystkim na relacje z Klientami i
+              partnerstwo w biznesie. Nieruchomości to dla mnie przede wszystkim
+              ludzie i ich potrzeby.
             </h4>
             <p>
-              Specjalizuje się w sprzedaży oraz najmie mieszkań i apartamentów
-              Premium w całym Trójmieście (Gdańsk, Sopot, Gdynia), oraz domów
-              segmentu Premium.
+              Większość moich Klientów trafia do mnie z polecenia. W życiu jak i
+              w pracy stawiam na jakość, nigdy na ilość. Specjalizuję się w
+              najmie oraz sprzedaży mieszkań i domów na terenie całego
+              Trójmiasta.
             </p>
 
-            <button>Czytaj dalej</button>
+            <Link to="/service"> <button>Czytaj dalej</button></Link>
           </div>
           <img src={servmain} alt="services img" />
         </div>
@@ -104,8 +111,8 @@ const Home = () => {
           </div>
         </div>
       </article>
-      <Footer/>
-
+      <OfferSlider/>
+      <Footer />
     </>
   );
 };

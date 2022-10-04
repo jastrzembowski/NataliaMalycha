@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -61,7 +62,7 @@ const Nav = () => {
         <div className="side-box">
           <ul className="side-texts">
             <li>O mnie</li>
-            <li>Usługi</li>
+            <li><Link to="/service" onClick={() => setActive(false)}>Usługi</Link></li>
             <li>Trójmiasto</li>
             <li>Oferty</li>
             <li>Kontakt</li>

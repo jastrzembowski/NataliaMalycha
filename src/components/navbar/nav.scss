@@ -253,7 +253,9 @@ nav .menu-icon .nav-icon:after {
   justify-content: space-evenly;
   margin-left: 100px;
 
-  li {
+  li, a {
+    text-decoration: none;
+    color: $main-dark;
     list-style-type: none;
     text-transform: uppercase;
     font-size: 36px;

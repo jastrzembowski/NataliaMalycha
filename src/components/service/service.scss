@@ -1,0 +1,51 @@
+@import "../../index.scss";
+
+.service-header__container {
+  background: url("../../images/pattern-white.png");
+  background-attachment: fixed;
+  height: 90vh;
+  width: 90%;
+  padding: 0px 5% 100px;
+  .service-img-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    h1 {
+      position: absolute;
+      top: 40vh;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: white;
+      z-index: 1;
+
+      font-size: 40px;
+      font-family: "Josefin Sans", sans-serif;
+      text-align: center;
+    }
+    h3{
+        position: absolute;
+      top: 60vh;
+      margin-left: auto;
+      margin-right: auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      color: white;
+      z-index: 1;
+      font-size: 50px;
+      font-family: "Send Flowers", cursive;
+      padding: 0px 100px 20px;
+      border-bottom: 1px solid;
+
+    }
+    img {
+      height: 90vh;
+      width: 100%;
+      object-fit: cover;
+      filter: brightness(0.7);
+    }
+  }
+}
