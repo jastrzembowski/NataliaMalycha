@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -39,10 +39,13 @@ const Nav = () => {
         >
           <span className="nav-icon"></span>
         </label>
-        <img
-          src={navbar ? nmlogo : nmlogowhite}
-          alt="logo Natalia Małycha"
-        ></img>
+        <Link to="/">
+          {" "}
+          <img
+            src={navbar ? nmlogo : nmlogowhite}
+            alt="logo Natalia Małycha"
+          ></img>
+        </Link>
         <div className="media-box">
           <FontAwesomeIcon icon={faEnvelope} />
           <FontAwesomeIcon icon={faFacebook} />
@@ -58,11 +61,18 @@ const Nav = () => {
         >
           <span className="side-nav-icon"></span>
         </label>
-        <img src={nmlogo} alt="logo" className="side-logo" />
+        <Link to="/" onClick={() => setActive(false)}  className="side-logo">
+    
+          <img src={nmlogo} alt="logo" className="side-logo" />
+        </Link>
         <div className="side-box">
           <ul className="side-texts">
             <li>O mnie</li>
-            <li><Link to="/service" onClick={() => setActive(false)}>Usługi</Link></li>
+            <li>
+              <Link to="/service" onClick={() => setActive(false)}>
+                Usługi
+              </Link>
+            </li>
             <li>Trójmiasto</li>
             <li>Oferty</li>
             <li>Kontakt</li>
@@ -70,12 +80,11 @@ const Nav = () => {
           <div className="side-offer-box">
             <h3>Polecana oferta</h3>
             <img src={sidepic} alt="sidepic"></img>
-            <h4>Apartament <br/>w Sopocie</h4>
-            <button>
-              Zobacz więcej
-            </button>
+            <h4>
+              Apartament <br />w Sopocie
+            </h4>
+            <button>Zobacz więcej</button>
           </div>
-
         </div>
       </article>
     </>
