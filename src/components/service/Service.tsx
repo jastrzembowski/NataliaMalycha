@@ -9,6 +9,7 @@ import servmain from "../../images/service/servmain.png";
 import natserv2 from "../../images/service/natserv2.png";
 import "./service.scss";
 import Footer from "../footer/Footer";
+import StayTuned from "../utils/StayTuned";
 
 const Service = () => {
   const settings2 = {
@@ -149,7 +150,7 @@ const Service = () => {
           </div>
         </div>
       </article>
-
+    <StayTuned/>
       <Footer />
     </>
   );

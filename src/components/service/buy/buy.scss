@@ -28,9 +28,10 @@
       text-align: justify;
       line-height: 1.5;
       h3{
-        font-size: 27px;
-        text-align: center;
+        font-size: 35px;
+        text-align: left;
         margin-bottom: 5px;
+        font-weight: 100;
       }
     }
     img {
@@ -44,4 +45,10 @@
     font-family: 'Italianno', cursive;
     font-weight: 100;
   }
+}
+
+.buy-text-box .sell-bottom__text{
+    padding: 50px 15%;
+    font-size: 35px;
+    text-align: center;
 }
