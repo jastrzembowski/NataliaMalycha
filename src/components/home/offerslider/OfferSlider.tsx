@@ -7,7 +7,7 @@ export default function OfferSlider() {
   const settings = {
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     dots: true,
     arrows: true,
     autoplayspeed: 1000,

@@ -5,6 +5,7 @@ import natmain from "../../images/natmain.png";
 import servmain from "../../images/servmain.png";
 import Footer from "../footer/Footer";
 import OfferSlider from "./offerslider/OfferSlider";
+import StayTuned from "../utils/StayTuned";
 
 const Home = () => {
   return (
@@ -112,6 +113,7 @@ const Home = () => {
         </div>
       </article>
       <OfferSlider/>
+      <StayTuned/>
       <Footer />
     </>
   );

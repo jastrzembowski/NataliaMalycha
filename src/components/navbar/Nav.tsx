@@ -11,6 +11,7 @@ import sidepic from "../../images/sidepic.jpg";
 import nmlogo from "../../images/nmlogo.png";
 import nmlogowhite from "../../images/nmlogowhite.png";
 import "./nav.scss";
+import StayTuned from "../utils/StayTuned";
 
 const Nav = () => {
   const [navbar, setNavbar] = useState(false);
@@ -61,8 +62,7 @@ const Nav = () => {
         >
           <span className="side-nav-icon"></span>
         </label>
-        <Link to="/" onClick={() => setActive(false)}  className="side-logo">
-    
+        <Link to="/" onClick={() => setActive(false)} className="side-logo">
           <img src={nmlogo} alt="logo" className="side-logo" />
         </Link>
         <div className="side-box">
@@ -85,7 +85,10 @@ const Nav = () => {
             </h4>
             <button>Zobacz więcej</button>
           </div>
+
         </div>
+        <StayTuned/>
+
       </article>
     </>
   );

@@ -36,8 +36,8 @@
       color: white;
       z-index: 1;
       font-size: 50px;
-      font-family: "Send Flowers", cursive;
-      padding: 0px 100px 20px;
+      font-family: 'Italianno', cursive;
+      font-weight: 100;      padding: 0px 100px 20px;
       border-bottom: 1px solid;
     }
     img {
@@ -70,8 +70,8 @@
   .serv-title h4 {
     width: 50%;
     color: white;
-    font-family: "Send Flowers", cursive;
-    font-size: 26px;
+    font-family: 'Italianno', cursive;
+    font-weight: 100;    font-size: 26px;
     padding: 0px 25% 50px;
   }
   img {
@@ -80,6 +80,7 @@
     height: 450px;
     padding-left: 50px;
     padding-right: 50px;
+    object-position: top;
   }
   .service-text__container {
     color: white;
@@ -111,6 +112,7 @@
       flex-direction: row;
       text-align: justify;
       justify-content: space-around;
+      padding-bottom: 60px;
 
       .img-holder{
         display: flex;
@@ -119,8 +121,8 @@
         h3{
             color: white;
             text-align: center;
-            font-family: "Send Flowers", cursive;
-            font-size: 35px;
+            font-family: 'Italianno', cursive;
+            font-weight: 100;            font-size: 35px;
         }
         img{
             width: 100%;

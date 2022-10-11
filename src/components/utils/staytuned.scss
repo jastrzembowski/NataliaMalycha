@@ -1,0 +1,45 @@
+@import "../../index.scss";
+
+.stay-tuned__box{
+    display: flex;
+    padding: 50px 20%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    h3{
+        font-size: 38px;
+        font-weight: 400;
+    }
+    form{
+        input{
+            padding: 12px 11px 12px 9px;
+            margin-right: 10px;
+            width: 200px;
+            border: 1px solid rgb(233, 233, 233);
+            font-family: "Josefin Sans", sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+        }
+        button {
+            text-align: center;
+            padding: 13px;
+            font-family: "Josefin Sans", sans-serif;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 12px;
+            width: 120px;
+            color: white;
+            cursor: pointer;
+            transition: 0.5s ease-in-out;
+            background-color: $main-green;
+            border: none;
+    
+            &:hover {
+              color: $main-green;
+              border: none;
+              background-color: $light-gray;
+             
+            }
+          }
+    }
+}
