@@ -236,12 +236,13 @@ nav .menu-icon .nav-icon:after {
   .service-hidden {
     height: 0px;
     display: none;
-    transition: height .4 ease;
+    color: white;
+    transition: all .4 ease;
   }
   .side-service {
     height: 220px;
-    transition: height .4 ease;
-
+    transition: all .4 ease;
+color: $main-dark;
     display: block;
 
     li, a{
@@ -258,7 +259,7 @@ nav .menu-icon .nav-icon:after {
   padding-top: 20px;
 }
 .side-box {
-  margin: 8% 10% 6%;
+  margin: 8% 10% 1%;
   width: 80%;
   height: auto;
   background-image: url("../../images/pattern-white.png");
@@ -294,8 +295,9 @@ nav .menu-icon .nav-icon:after {
   grid-area: 1 / 2 / 2 / 3;
   display: flex;
   flex-direction: column;
+  height: fit-content;
   background-color: white;
-  margin: 10% 15%;
+  margin: 5% 15%;
   text-align: center;
   align-items: center;
   h3 {

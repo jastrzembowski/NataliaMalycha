@@ -2,7 +2,7 @@
 
 .main-container {
   width: 100%;
-  height: calc(120vh - 130px);
+  height: calc(100vh);
   background-color: $main-green;
 }
 .video-box {
@@ -50,7 +50,7 @@
   color: white;
   align-items: center;
   width: 94%;
-  height: 400px;
+  height: 250px;
   margin: 0px 3%;
   justify-content: space-evenly;
   background-image: url("../../images/pattern-dark-green.png");
@@ -167,7 +167,7 @@
     font-weight: 100;
   }
   p {
-    font-size: 28px;
+    font-size: 23px;
     padding-top: 50px;
     color: $main-dark;
     width: 40%;

@@ -68,7 +68,16 @@ const Nav = () => {
         </Link>
         <div className="side-box">
           <ul className="side-texts">
-            <li>O mnie</li>
+            <li>
+              <Link
+                to="/about"
+                onClick={
+                  active ? () => setActive(false) : () => setActive(true)
+                }
+              >
+                O mnie
+              </Link>
+            </li>
             <li
               onClick={
                 service ? () => setService(false) : () => setService(true)
@@ -77,14 +86,58 @@ const Nav = () => {
               Usługi
             </li>
             <ul className={!service ? "service-hidden" : "side-service"}>
-              <li><Link to ="/service"  onClick={active ? () => setActive(false) : () => setActive(true)}>o usługach </Link></li>
-              <li><Link to ="/service/sell" onClick={active ? () => setActive(false) : () => setActive(true)}>Sprzedaż </Link></li>
-              <li><Link to ="/service/buy" onClick={active ? () => setActive(false) : () => setActive(true)}>Kupno </Link></li>
-              <li><Link to ="/service/rent" onClick={active ? () => setActive(false) : () => setActive(true)}>Wynajem </Link></li>
+              <li>
+                <Link
+                  to="/service"
+                  onClick={
+                    active ? () => setActive(false) : () => setActive(true)
+                  }
+                >
+                  o usługach{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/service/sell"
+                  onClick={
+                    active ? () => setActive(false) : () => setActive(true)
+                  }
+                >
+                  Sprzedaż{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/service/buy"
+                  onClick={
+                    active ? () => setActive(false) : () => setActive(true)
+                  }
+                >
+                  Kupno{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/service/rent"
+                  onClick={
+                    active ? () => setActive(false) : () => setActive(true)
+                  }
+                >
+                  Wynajem
+                </Link>
+              </li>
             </ul>
             <li>Trójmiasto</li>
-            <li>Oferty</li>
-            <li>Kontakt</li>
+            <li>
+              <a href="https://invilla.pl/zespol/natalia-malycha/#properties">
+                Oferty
+              </a>
+            </li>
+            <li>
+              <Link to="/contact"  onClick={
+                    active ? () => setActive(false) : () => setActive(true)
+                  }> Kontakt</Link>
+            </li>
           </ul>
           <div className="side-offer-box">
             <h3>Polecana oferta</h3>
