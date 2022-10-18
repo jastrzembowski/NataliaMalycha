@@ -1,6 +1,5 @@
 @import "../../index.scss";
 
-
 .navbar {
   left: 0;
   padding: 30px 75px;
@@ -237,15 +236,28 @@ nav .menu-icon .nav-icon:after {
     height: 0px;
     display: none;
     color: white;
-    transition: all .4 ease;
+    transition: all 0.4 ease;
   }
   .side-service {
     height: 220px;
-    transition: all .4 ease;
-color: $main-dark;
+    transition: all 0.4 ease;
+    color: $main-dark;
     display: block;
 
-    li, a{
+    li,
+    a {
+      font-size: 29px;
+      line-height: 1.9;
+    }
+  }
+  .side-tricity{
+    height: 170px;
+    transition: all 0.4 ease;
+    color: $main-dark;
+    display: block;
+
+    li,
+    a {
       font-size: 29px;
       line-height: 1.9;
     }

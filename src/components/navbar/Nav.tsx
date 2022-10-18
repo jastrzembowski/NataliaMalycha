@@ -17,6 +17,7 @@ const Nav = () => {
   const [navbar, setNavbar] = useState(false);
   const [active, setActive] = useState(false);
   const [service, setService] = useState(false);
+  const [tricity, setTricity] = useState(false);
 
   const changeNav = () => {
     if (window.scrollY >= 50) {
@@ -42,7 +43,6 @@ const Nav = () => {
           <span className="nav-icon"></span>
         </label>
         <Link to="/">
-          {" "}
           <img
             src={navbar ? nmlogo : nmlogowhite}
             alt="logo Natalia Małycha"
@@ -50,9 +50,15 @@ const Nav = () => {
         </Link>
         <div className="media-box">
           <FontAwesomeIcon icon={faEnvelope} />
-          <FontAwesomeIcon icon={faFacebook} />
-          <FontAwesomeIcon icon={faLinkedin} />
-          <FontAwesomeIcon icon={faInstagram} />
+          <a href="https://www.facebook.com/InVilla">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="https://www.linkedin.com/in/natalia-ma%C5%82ycha-58097883/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://www.instagram.com/invilla_nieruchomosci/">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </div>
         <h3>MEET ME</h3>
       </nav>
@@ -80,7 +86,7 @@ const Nav = () => {
             </li>
             <li
               onClick={
-                service ? () => setService(false) : () => setService(true)
+                service ? () => setService(false) : () => {setService(true);setTricity(false)}
               }
             >
               Usługi
@@ -127,16 +133,60 @@ const Nav = () => {
                 </Link>
               </li>
             </ul>
-            <li>Trójmiasto</li>
+            <li
+              onClick={
+                tricity ? () => setTricity(false) : () => {setTricity(true);setService(false)}
+              }
+            >
+              Trójmiasto
+            </li>
+            <ul className={!tricity ? "service-hidden" : "side-tricity"}>
+              <li>
+                <Link
+                  to="/gdansk"
+                  onClick={
+                    active ? () => setActive(false) : () => setActive(true)
+                  }
+                >
+                  Gdańsk
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/gdynia"
+                  onClick={
+                    active ? () => setActive(false) : () => setActive(true)
+                  }
+                >
+                  Gdynia{" "}
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/sopot"
+                  onClick={
+                    active ? () => setActive(false) : () => setActive(true)
+                  }
+                >
+                  Sopot{" "}
+                </Link>
+              </li>
+            </ul>
             <li>
               <a href="https://invilla.pl/zespol/natalia-malycha/#properties">
                 Oferty
               </a>
             </li>
             <li>
-              <Link to="/contact"  onClick={
-                    active ? () => setActive(false) : () => setActive(true)
-                  }> Kontakt</Link>
+              <Link
+                to="/contact"
+                onClick={
+                  active ? () => setActive(false) : () => setActive(true)
+                }
+              >
+                {" "}
+                Kontakt
+              </Link>
             </li>
           </ul>
           <div className="side-offer-box">

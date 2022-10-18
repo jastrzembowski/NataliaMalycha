@@ -1,0 +1,277 @@
+@import "../../../index.scss";
+
+.gda-header {
+  width: 94%;
+  min-height: 700px;
+  margin: 0px 3% 60px;
+  height: 90vh;
+  background-image: url("../../../images/gdansk/gda6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    display: block;
+    min-height: 700px;
+    height: 90vh;
+    width: 94%;
+    position: absolute;
+  }
+  h1 {
+    transform: translateY(50px);
+    font-size: 60px;
+    font-family: "Josefin Sans";
+    color: white;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  h3 {
+    z-index: 1;
+    color: white;
+    font-family: "Italianno", cursive;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 4px;
+  }
+}
+.gda-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .gdy-intro {
+    margin-top: 0px;
+    padding: 70px 15%;
+    text-align: center;
+    width: 70%;
+    color: white;
+    font-weight: 100;
+    background-color: $light-pink;
+  }
+  .sop-intro {
+    margin-top: 0px;
+    padding: 70px 15%;
+    text-align: center;
+    width: 70%;
+    color: white;
+    font-weight: 100;
+    background-color: $main-green;
+  }
+  .gda-about__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 10%;
+    align-items: center;
+    background-image: url("../../../images/pattern-dark-green.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: 80%;
+
+    h1 {
+      width: 40%;
+      font-family: "Italianno", cursive;
+      font-weight: 100;
+      font-size: 25px;
+      color: white;
+    }
+    p {
+      width: 40%;
+      font-weight: 100;
+      font-size: 26px;
+      color: white;
+    }
+  }
+  .gdy-about__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 10%;
+    align-items: center;
+    background-image: url("../../../images/pattern-heather.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: 80%;
+    h1 {
+      width: 40%;
+      font-family: "Italianno", cursive;
+      font-weight: 100;
+      font-size: 60px;
+      color: white;
+    }
+    p {
+      width: 40%;
+      font-weight: 100;
+      font-size: 26px;
+      color: white;
+    }
+  }
+  .gda-box {
+    display: flex;
+    flex-direction: row;
+    padding: 50px 15%;
+    width: 70%;
+    justify-content: space-around;
+    h1 {
+      font-family: "Italianno", cursive;
+      color: $main-green;
+      font-weight: 100;
+      font-size: 26px;
+    }
+    h3 {
+      font-weight: 100;
+      margin-bottom: 0px;
+    }
+    aside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: justify;
+      width: 30%;
+    }
+    img {
+      width: 30%;
+      height: fit-content;
+      object-fit: cover;
+      align-self: center;
+      min-height: 250px;
+    }
+  }
+}
+.gdy-bg {
+  width: 100%;
+  height: auto;
+  background-color: $light-pink;
+}
+
+.sop-bg{
+    width: 100%;
+    height: auto;
+    background-color: $main-green;
+  }
+.gdy-header {
+  width: 94%;
+  min-height: 700px;
+  margin: 0px 3%;
+  height: 90vh;
+  background-image: url("../../../images/gdynia/gdy1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    display: block;
+    min-height: 700px;
+    height: 90vh;
+    width: 94%;
+    position: absolute;
+  }
+  h1 {
+    transform: translateY(50px);
+    font-size: 60px;
+    font-family: "Josefin Sans";
+    color: white;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  h3 {
+    z-index: 1;
+    color: white;
+    font-family: "Italianno", cursive;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 4px;
+  }
+}
+
+.sop-header {
+    width: 94%;
+    min-height: 700px;
+    margin: 0px 3%;
+    height: 90vh;
+    background-image: url("../../../images/sopot/sop1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+  
+    &::before {
+      content: "";
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+      display: block;
+      min-height: 700px;
+      height: 90vh;
+      width: 94%;
+      position: absolute;
+    }
+    h1 {
+      transform: translateY(50px);
+      font-size: 60px;
+      font-family: "Josefin Sans";
+      color: white;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+    h3 {
+      z-index: 1;
+      color: white;
+      font-family: "Italianno", cursive;
+      font-weight: 100;
+      font-size: 30px;
+      margin: 4px;
+    }
+  }.sop-about__head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 10%;
+    align-items: center;
+    background-image: url("../../../images/pattern-dark-green.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    width: 80%;
+    h1 {
+      width: 40%;
+      font-family: "Italianno", cursive;
+      font-weight: 100;
+      font-size: 60px;
+      color: white;
+    }
+    p {
+      width: 40%;
+      font-weight: 100;
+      font-size: 26px;
+      color: white;
+    }
+  }

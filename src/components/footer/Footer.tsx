@@ -1,5 +1,6 @@
 import React from "react";
 import "./footer.scss";
+import {Link} from "react-router-dom";
 import nmlogo from "../../images/nmlogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -13,7 +14,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer-logo__holder">
-        <img src={nmlogo} alt="nm logo"></img>
+       <Link to="/"> <img src={nmlogo} alt="nm logo"></img></Link>
       </div>
       <ul className="footer-links">
         <li>RODO</li>

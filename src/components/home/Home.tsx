@@ -48,7 +48,7 @@ const Home = () => {
               segmentu Premium.
             </p>
 
-            <button>Czytaj dalej</button>
+          <Link to ="/about">   <button>Czytaj dalej</button></Link>
           </div>
         </div>
       </article>

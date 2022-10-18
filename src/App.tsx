@@ -10,7 +10,9 @@ import Sell from "./components/service/sell/Sell";
 import ScrollToTop from "./components/utils/ScrollToTop";
 import About from "./components/about/About";
 import Contact from "./components/contact/Contact";
-
+import Gdansk from "./components/tricity/gdansk/Gdansk";
+import Sopot from "./components/tricity/sopot/Sopot";
+import Gdynia from "./components/tricity/gdynia/Gdynia";
 
 function App() {
   return (
@@ -18,10 +20,12 @@ function App() {
       <ScrollToTop />
       <Nav />
       <Routes>
-
         <Route path="/" element={<Home />} />
+        <Route path="/gdansk" element={<Gdansk />} />
+        <Route path="/sopot" element={<Sopot />} />
+        <Route path="/gdynia" element={<Gdynia />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact/> }/>
+        <Route path="/contact" element={<Contact />} />
         <Route path="/service" element={<Service />} />
         <Route path="/service/sell" element={<Sell />} />
         <Route path="/service/buy" element={<Buy />} />
