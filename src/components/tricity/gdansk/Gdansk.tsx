@@ -1,7 +1,6 @@
 import React from "react";
 import "./gdansk.scss";
-import gda1 from "../../../images/gdansk/gda1.jpg";
-import gda2 from "../../../images/gdansk/gda2.jpg";
+
 import gda3 from "../../../images/gdansk/gda3.jpg";
 import gda4 from "../../../images/gdansk/gda4.jpg";
 import gda5 from "../../../images/gdansk/gda5.jpg";
