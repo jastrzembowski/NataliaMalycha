@@ -24,7 +24,7 @@
     right: auto;
     background-image: url("../../../images/assets/carousel-prev-dark-grey.svg");
     z-index: 10;
-    &:hover{
+    &:hover {
       width: 50px;
     }
     &::before {
@@ -38,7 +38,7 @@
     background-image: url("../../../images/assets/carousel-next-dark-grey.svg");
     transform: translateX(313px) translateY(260px);
     z-index: 10;
-    &:hover{
+    &:hover {
       width: 50px;
     }
     &::before {
@@ -99,7 +99,7 @@
   transform: scale(0.9);
   transform-origin: center top;
   transition: all 0.5s ease-in-out;
-  width: 420px;
+  width: 30vw;
   align-items: center;
   img {
     width: 80%;
@@ -149,7 +149,6 @@
     width: 420px;
     vertical-align: middle;
     padding: 10px 0px;
-    margin: 10px;
     transition: all 0.3s ease;
     height: auto;
     text-align: center;
@@ -176,4 +175,36 @@
   opacity: 1;
   display: flex;
   justify-content: center;
+}
+@media (max-width: 700px) {
+  .offer-slider-box {
+    .slick-arrow {
+      background: no-repeat;
+      background-size: 30px 30px;
+      bottom: -40px;
+      cursor: pointer;
+      height: 30px;
+      position: absolute;
+      text-indent: -12345px;
+      width: 30px;
+      z-index: 20;
+      transform: none;
+
+    }
+      .slick-next {
+        left: calc(50% + 10px);
+      }
+      .slick-prev {
+        right: calc(50% + 10px);
+      }
+   
+  }
+
+  .slider-offer{
+    background-color: white;
+    opacity: 1;
+  }
+  .slider-button{
+    opacity: 1;
+  }
 }

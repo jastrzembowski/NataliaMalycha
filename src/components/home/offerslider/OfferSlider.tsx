@@ -25,18 +25,11 @@ export default function OfferSlider() {
           dots: true,
         },
       },
+      
       {
-        breakpoint: 1224,
+        breakpoint: 750,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true,
-        },
-      },
-      {
-        breakpoint: 800,
-        settings: {
+          centerMode: false,
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,

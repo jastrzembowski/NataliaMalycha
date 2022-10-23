@@ -8,7 +8,7 @@
   background: url("../../images/nat14.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,15 +66,15 @@
     justify-content: space-evenly;
     flex-direction: row;
     width: 100%;
-    
+
     padding-bottom: 100px;
     article {
       width: 30%;
       text-align: justify;
       font-size: 24px;
-        &::first-letter{
-            font-size: 40px;
-        }
+      &::first-letter {
+        font-size: 40px;
+      }
     }
     img {
       width: 20%;
@@ -85,19 +85,53 @@
     }
   }
 }
-.about-bot{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.about-bot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  h4 {
+    font-size: 30px;
+    margin: 5px;
+    font-weight: 100;
+  }
+  h2 {
+    font-family: "Italianno", cursive;
+    font-weight: 100;
+    font-size: 60px;
+  }
+}
+@media (max-width: 700px) {
+  .about-head h1 {
     text-align: center;
+  }
+  .about-top h3 {
+    font-size: 26px;
+    height: auto;
+  }
+  .about-top .about-text {
+    flex-direction: column;
+    article {
+      width: 90%;
+      padding: 5px 5%;
+      margin: 0px;
+      font-size: 18px;
+    }
+    img {
+      width: 70%;
+      padding: 5px 15%;
+    }
+  }
+  .about-top .about-text:nth-of-type(2) {
+    flex-direction: column-reverse;
+  }
+
+  .about-bot{
     h4{
-        font-size: 30px;
-        margin : 5px;
-        font-weight: 100;
+        font-size: 22px;
     }
     h2{
-        font-family: "Italianno", cursive;
-        font-weight: 100;
-        font-size: 60px;
+        font-size: 26px;
     }
+  }
 }

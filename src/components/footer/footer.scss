@@ -34,7 +34,7 @@ footer {
   justify-content: center;
   text-transform: uppercase;
   line-height: 1;
-  li{
+  li {
     margin: 8px;
     cursor: pointer;
   }
@@ -46,17 +46,17 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  p{
+  p {
     margin: 5px;
     font-size: 20px;
-}
-  h6{
+  }
+  h6 {
     margin: 15px 5px;
     font-size: 20px;
     font-weight: 400;
     color: $main-dark;
-}
-svg {
+  }
+  svg {
     transition: all 0.3s ease-in-out;
     font-size: 22px;
     padding: 0px 6px;
@@ -64,6 +64,25 @@ svg {
     cursor: pointer;
     &:hover {
       color: $main-green;
+    }
+  }
+}
+@media (max-width: 700px) {
+  footer {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  
+    .footer-links {
+      grid-area: 2 / 1 / 3 / 2;
+      text-align: center;
+      padding: 5px;
+    }
+    .footer-address {
+      grid-area: 3 / 1 / 4 / 2;
+      text-align: center;
+      padding: 5px 5px 50px;
     }
   }
 }

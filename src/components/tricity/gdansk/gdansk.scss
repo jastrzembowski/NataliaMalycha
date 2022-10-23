@@ -154,11 +154,11 @@
   background-color: $light-pink;
 }
 
-.sop-bg{
-    width: 100%;
-    height: auto;
-    background-color: $main-green;
-  }
+.sop-bg {
+  width: 100%;
+  height: auto;
+  background-color: $main-green;
+}
 .gdy-header {
   width: 94%;
   min-height: 700px;
@@ -207,71 +207,111 @@
 }
 
 .sop-header {
-    width: 94%;
+  width: 94%;
+  min-height: 700px;
+  margin: 0px 3%;
+  height: 90vh;
+  background-image: url("../../../images/sopot/sop1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    display: block;
     min-height: 700px;
-    margin: 0px 3%;
     height: 90vh;
-    background-image: url("../../../images/sopot/sop1.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    display: flex;
+    width: 94%;
+    position: absolute;
+  }
+  h1 {
+    transform: translateY(50px);
+    font-size: 60px;
+    font-family: "Josefin Sans";
+    color: white;
+    text-transform: uppercase;
+    z-index: 1;
+  }
+  h3 {
+    z-index: 1;
+    color: white;
+    font-family: "Italianno", cursive;
+    font-weight: 100;
+    font-size: 30px;
+    margin: 4px;
+  }
+}
+.sop-about__head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 40px 10%;
+  align-items: center;
+  background-image: url("../../../images/pattern-dark-green.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  width: 80%;
+  h1 {
+    width: 40%;
+    font-family: "Italianno", cursive;
+    font-weight: 100;
+    font-size: 60px;
+    color: white;
+  }
+  p {
+    width: 40%;
+    font-weight: 100;
+    font-size: 26px;
+    color: white;
+  }
+}
+
+@media (max-width: 700px) {
+  .gda-about .gda-about__head,
+  .gda-about .gdy-about__head,
+  .gda-about .sop-about__head{
     flex-direction: column;
-  
-    justify-content: center;
-    align-items: center;
-  
-    &::before {
-      content: "";
-      background: linear-gradient(
-        180deg,
-        rgba(0, 0, 0, 0) 0%,
-        rgba(0, 0, 0, 0.5) 100%
-      );
-      display: block;
-      min-height: 700px;
-      height: 90vh;
-      width: 94%;
-      position: absolute;
-    }
     h1 {
-      transform: translateY(50px);
-      font-size: 60px;
-      font-family: "Josefin Sans";
-      color: white;
-      text-transform: uppercase;
-      z-index: 1;
-    }
-    h3 {
-      z-index: 1;
-      color: white;
-      font-family: "Italianno", cursive;
-      font-weight: 100;
-      font-size: 30px;
-      margin: 4px;
-    }
-  }.sop-about__head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 40px 10%;
-    align-items: center;
-    background-image: url("../../../images/pattern-dark-green.png");
-    background-repeat: repeat;
-    background-attachment: fixed;
-    width: 80%;
-    h1 {
-      width: 40%;
-      font-family: "Italianno", cursive;
-      font-weight: 100;
-      font-size: 60px;
-      color: white;
+      width: 90%;
+      text-align: center;
     }
     p {
-      width: 40%;
-      font-weight: 100;
-      font-size: 26px;
-      color: white;
+      width: 90%;
+      font-size: 18px;
+      text-align: center;
     }
   }
+  .gda-about .gda-box:nth-of-type(odd){
+    flex-direction: column;
+  }
+  .gda-about .gda-box:nth-of-type(even){
+    flex-direction: column-reverse;
+  }
+  .gda-about .gda-box{
+    padding: 10px;
+    aside{
+        width: 100%;
+        text-align: center;
+        h3{
+            margin: 10px;
+        }
+        h1{
+            margin: 5px;
+        }
+    }
+    img{
+        width: 100%;
+    }
+  }
+}

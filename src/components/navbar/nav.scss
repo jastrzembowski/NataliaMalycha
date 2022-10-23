@@ -363,3 +363,57 @@ nav .menu-icon .nav-icon:after {
     }
   }
 }
+
+
+@media (max-width: 700px) {
+  .menu-hidden{
+    left: -1000px;
+  }
+  .navbar{
+    padding: 30px 10px;
+    img{
+      width: 173px;
+    }
+    .media-box svg {
+      font-size: 16px;
+      padding: 4px;
+    }
+    h3{
+      right: 15px;
+      padding: 5px 10px 12px;
+      font-size: 14px;
+    }
+    .media-box{
+      right: 15px;
+    }
+    .menu-icon{
+      left: 18px;
+    }
+  }
+  .navbar-white img{
+    width: 90px;
+    top: 30px;
+  }
+  .side-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 100px;
+    margin: 5px;
+    .side-texts{
+      margin-left: 0px;
+      a, li{
+        font-size: 22px;
+      }
+    }
+  }
+  .side-offer-box{
+    margin: 5px;
+  }
+  .side-menu .side-service{
+    height: auto;
+  }
+  .side-menu .side-tricity{
+    height: auto;
+  }
+}
