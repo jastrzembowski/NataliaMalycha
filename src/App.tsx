@@ -13,6 +13,7 @@ import Contact from "./components/contact/Contact";
 import Gdansk from "./components/tricity/gdansk/Gdansk";
 import Sopot from "./components/tricity/sopot/Sopot";
 import Gdynia from "./components/tricity/gdynia/Gdynia";
+import Tricity from "./components/tricity/Tricity";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/tricity" element={<Tricity/>}/>
         <Route path="/gdansk" element={<Gdansk />} />
         <Route path="/sopot" element={<Sopot />} />
         <Route path="/gdynia" element={<Gdynia />} />

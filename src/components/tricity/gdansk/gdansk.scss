@@ -1,11 +1,11 @@
 @import "../../../index.scss";
 
 .gda-header {
-  width: 94%;
+  width: 94vw;
   min-height: 700px;
   margin: 0px 3% 60px;
   height: 90vh;
-  background-image: url("../../../images/gdansk/gda6.jpg");
+  background-image: url("../../../images/gdansk/gda5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -25,7 +25,7 @@
     display: block;
     min-height: 700px;
     height: 90vh;
-    width: 94%;
+    width: 94vw;
     position: absolute;
   }
   h1 {
@@ -160,7 +160,7 @@
   background-color: $main-green;
 }
 .gdy-header {
-  width: 94%;
+  width: 94vw;
   min-height: 700px;
   margin: 0px 3%;
   height: 90vh;
@@ -185,7 +185,7 @@
     display: block;
     min-height: 700px;
     height: 90vh;
-    width: 94%;
+    width: 94vw;
     position: absolute;
   }
   h1 {
@@ -207,7 +207,7 @@
 }
 
 .sop-header {
-  width: 94%;
+  width: 94vw;
   min-height: 700px;
   margin: 0px 3%;
   height: 90vh;
@@ -232,7 +232,7 @@
     display: block;
     min-height: 700px;
     height: 90vh;
-    width: 94%;
+    width: 94vw;
     position: absolute;
   }
   h1 {

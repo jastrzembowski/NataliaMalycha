@@ -1,0 +1,39 @@
+@import "../../index.scss";
+
+.tri-header {
+    width: 94vw;
+    min-height: 700px;
+    margin: 0px 3% ;
+    height: 90vh;
+    background-image: url("../../images/tric.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    &::before {
+      content: "";
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.5) 100%
+      );
+      display: block;
+      min-height: 700px;
+      height: 90vh;
+      width: 94vw;
+      position: absolute;
+    }
+    h1 {
+      transform: translateY(50px);
+      font-size: 60px;
+      font-family: "Josefin Sans";
+      color: white;
+      text-transform: uppercase;
+      z-index: 1;
+    }
+}

@@ -20,18 +20,23 @@ const Footer = () => {
         <li>RODO</li>
         <li>Nota Prawna</li>
         <li>Regulamin Serwisu</li>
-
         <li>Polityka prywatności</li>
       </ul>
       <div className="footer-address">
-        <p>ul. Lęborska 6B</p>
-        <p>Gdańsk</p>
-        <h6>Tel. 0 500 500 500</h6>
+        <p>ul. Strzelców 18/8</p>
+        <p>80-586 Gdynia</p>
+        <h6>Tel. +47 787 665 881</h6>
         <div className="media-box">
           <FontAwesomeIcon icon={faEnvelope} />
-          <FontAwesomeIcon icon={faFacebook} />
-          <FontAwesomeIcon icon={faLinkedin} />
-          <FontAwesomeIcon icon={faInstagram} />
+          <a href="https://www.facebook.com/InVilla">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="https://www.linkedin.com/in/natalia-ma%C5%82ycha-58097883/">
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="https://www.instagram.com/invilla_nieruchomosci/">
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
         </div>{" "}
       </div>
     </footer>

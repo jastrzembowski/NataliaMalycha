@@ -2,7 +2,7 @@
 
 .stay-tuned__box{
     display: flex;
-    padding: 50px 10%;
+    padding: 50px 10% 10px;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
@@ -42,6 +42,15 @@
             }
           }
     }
+  
+}
+.stay-tuned__container{
+
+    p{
+        font-size: 10px;
+        padding: 5px 15%;
+
+    }
 }
 @media (max-width: 700px){
 
@@ -52,6 +61,8 @@
         width: 80%;
         button{
             margin-top: 10px;
+                padding: 50px 10%;
+
         }
     }
 }

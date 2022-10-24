@@ -1,8 +1,9 @@
 import React from "react";
 import "./home.scss";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import servmain2 from "../../images/servmain2.png";
 import natmain from "../../images/natmain.png";
-import servmain from "../../images/servmain.png";
+import natmain2 from "../../images/natmain2.png";
 import Footer from "../footer/Footer";
 import OfferSlider from "./offerslider/OfferSlider";
 import StayTuned from "../utils/StayTuned";
@@ -48,7 +49,10 @@ const Home = () => {
               segmentu Premium.
             </p>
 
-          <Link to ="/about">   <button>Czytaj dalej</button></Link>
+            <Link to="/about">
+              {" "}
+              <button>Czytaj dalej</button>
+            </Link>
           </div>
         </div>
       </article>
@@ -80,40 +84,39 @@ const Home = () => {
               Trójmiasta.
             </p>
 
-            <Link to="/service"> <button>Czytaj dalej</button></Link>
+            <Link to="/service">
+              {" "}
+              <button>Czytaj dalej</button>
+            </Link>
           </div>
-          <img src={servmain} alt="services img" />
+          <img src={servmain2} alt="services img" />
         </div>
       </article>
       <article className="main-tricity">
         <div className="header-tricity__title">
           <h3>Idealne miejsce do życia...</h3>
-          <p>
-            „Połączenie sił to początek, pozostanie razem to postęp,
-            <br /> wspólna praca to sukces” - Henry Ford
-          </p>
+          <p>... a Ty już wybrałeś?</p>
         </div>
 
         <div className="header-tricity__text">
-          <img src={natmain} alt="natmain" />
+          <img src={natmain2} alt="natmain" />
           <div className="tricity-text__container">
             <h3>TRÓJMIASTO</h3>
             <h4>
-              Property Advisor & Branch Manager in Gdynia w firmie InVilla
-              Nieruchomości.
+              Trzy miasta położone wzdłuż polskiego wybrzeża Morza Bałtyckiego
+              tworzą obszar znany jako Trójmiasto:
             </h4>
             <p>
-              Specjalizuje się w sprzedaży oraz najmie mieszkań i apartamentów
-              Premium w całym Trójmieście (Gdańsk, Sopot, Gdynia), oraz domów
-              segmentu Premium.
+              nowoczesny port Gdynia, nadmorski kurort Sopot i historyczne
+              miasto Gdańsk, punkt zwrotny w historii świata.
             </p>
-
-            <button>Czytaj dalej</button>
+<Link to ="/tricity">
+            <button>Czytaj dalej</button></Link>
           </div>
         </div>
       </article>
-      <OfferSlider/>
-      <StayTuned/>
+      <OfferSlider />
+      <StayTuned />
       <Footer />
     </>
   );
