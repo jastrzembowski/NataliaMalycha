@@ -4,6 +4,15 @@ import ser1 from "../../../images/service/ser1.jpg";
 import ser2 from "../../../images/service/ser2.jpg";
 import ser3 from "../../../images/service/ser3.jpg";
 import ser4 from "../../../images/service/ser4.jpg";
+import kaw from "../../../images/rem.jpg";
+import rem from "../../../images/kaw.jpg";
+import prof from "../../../images/prof.jpg";
+import met from "../../../images/service/met.jpg";
+import kan from "../../../images/service/kan.jpg";
+import nat10 from "../../../images/nat10.jpg";
+import nat8 from "../../../images/nat8.jpg";
+
+
 import Footer from "../../footer/Footer";
 import StayTuned from "../../utils/StayTuned";
 
@@ -61,10 +70,10 @@ const Rent = () => {
               ustalimy target naszych Klientów, pomogę Ci w tym!
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={rem} alt="buy1"></img>
         </div>
         <div className="buy-text-2">
-          <img src={ser1} alt="buy1"></img>
+          <img src={kaw} alt="buy1"></img>
           <article>
             <h3>Przygotowanie nieruchomości</h3>
             <p>
@@ -96,10 +105,10 @@ const Rent = () => {
               działań marketingowych.
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={met} alt="buy1"></img>
         </div>
         <div className="buy-text-2">
-          <img src={ser1} alt="buy1"></img>
+          <img src={kan} alt="buy1"></img>
           <article>
             <h3>Wybór kanałów prezentacji</h3>
             <p>
@@ -128,10 +137,10 @@ const Rent = () => {
               liczbie odebranych telefonów i liczbie realnych kontaktów.
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={prof} alt="buy1"></img>
         </div>
         <div className="buy-text-2">
-          <img src={ser1} alt="buy1"></img>
+          <img src={nat8} alt="buy1"></img>
           <article>
             <h3>Działanie w Twoim imieniu</h3>
             <p>
@@ -161,7 +170,7 @@ const Rent = () => {
               oraz zabezpieczenie Ciebie przed wszelkim ryzykiem.
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={nat10} alt="buy1"></img>
         </div>
         <h1 className="rent-foot">
           Jeśli nadal się zastanawiasz czy jestem właściwą osobą, z którą chcesz

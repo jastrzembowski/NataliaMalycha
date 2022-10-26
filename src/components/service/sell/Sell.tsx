@@ -1,5 +1,13 @@
 import React from "react";
 import Slider from "react-slick";
+import fin from "../../../images/service/fin.jpg";
+import kan from "../../../images/service/kan.jpg";
+import met from "../../../images/service/met.jpg";
+import nat1 from "../../../images/service/nat1.jpg";
+import nat8 from "../../../images/service/nat8.jpg";
+
+import prep from "../../../images/service/prep.jpg";
+import spot from "../../../images/service/spot.jpg";
 import ser1 from "../../../images/service/ser1.jpg";
 import ser2 from "../../../images/service/ser2.jpg";
 import ser3 from "../../../images/service/ser3.jpg";
@@ -56,10 +64,10 @@ const Sell = () => {
               wyceny nieruchomości, pomogę Ci w tym!
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={spot} alt="buy1"></img>
         </div>
         <div className="buy-text-2">
-          <img src={ser1} alt="buy1"></img>
+          <img src={prep} alt="buy1"></img>
           <article>
             <h3>Przygotowanie nieruchomości</h3>
             <p>
@@ -99,10 +107,10 @@ const Sell = () => {
               na prezentację.
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={met} alt="buy1"></img>
         </div>
         <div className="buy-text-2">
-          <img src={ser1} alt="buy1"></img>
+          <img src={kan} alt="buy1"></img>
           <article>
             <h3>Wybór kanałów prezentacji</h3>
             <p>
@@ -131,10 +139,10 @@ const Sell = () => {
               telefonów i liczbie realnych kontaktów.
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={nat8} alt="buy1"></img>
         </div>
         <div className="buy-text-2">
-          <img src={ser1} alt="buy1"></img>
+          <img src={nat1} alt="buy1"></img>
           <article>
             <h3>Działanie w Twoim imieniu</h3>
             <p>
@@ -164,7 +172,7 @@ const Sell = () => {
               notariusza, w banku oraz na przekazaniu nieruchomości.
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={fin} alt="buy1"></img>
         </div>
         <h1 className="sell-bottom__text">
           Jeśli nadal się zastanawiasz czy jestem właściwą osobą, z którą chcesz

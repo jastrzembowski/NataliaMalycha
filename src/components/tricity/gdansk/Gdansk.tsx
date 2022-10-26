@@ -1,9 +1,14 @@
 import React from "react";
 import "./gdansk.scss";
-
-import gda3 from "../../../images/gdansk/gda3.jpg";
+import baz from "../../../images/gdansk/baz.jpg";
+import dlu from "../../../images/gdansk/dlu.jpg";
+import ecs from "../../../images/gdansk/ecs.jpg";
+import mar from "../../../images/gdansk/mar.jpg";
+import mot from "../../../images/gdansk/mot.jpg";
+import nep from "../../../images/gdansk/nep.jpg";
+import wes from "../../../images/gdansk/wes.jpeg";
+import woj from "../../../images/gdansk/woj.jpg";
 import gda4 from "../../../images/gdansk/gda4.jpg";
-import gda5 from "../../../images/gdansk/gda5.jpg";
 import gda6 from "../../../images/gdansk/gda6.jpg";
 import StayTuned from "../../utils/StayTuned";
 import Footer from "../../footer/Footer";
@@ -25,7 +30,7 @@ const Gdansk = () => {
         </article>
 
         <article className="gda-box">
-          <img src={gda3} alt="gdansk"></img>
+          <img src={dlu} alt="gdansk"></img>
           <aside>
             <h1>Długi Targ i Ulica Długa</h1>
             <h3>
@@ -55,10 +60,10 @@ const Gdansk = () => {
               ozdobną kratę, na której umieszczono herby Gdańska i polskie orły.
             </p>
           </aside>
-          <img src={gda4} alt="gdansk"></img>
+          <img src={nep} alt="gdansk"></img>
         </article>
         <article className="gda-box">
-          <img src={gda5} alt="gdansk"></img>
+          <img src={baz} alt="gdansk"></img>
           <aside>
             <h1>
               Bazylika konkatedralna Wniebowzięcia Najświętszej Maryi Panny
@@ -95,10 +100,10 @@ const Gdansk = () => {
               ulic największych polskich miast.{" "}
             </p>
           </aside>
-          <img src={gda6} alt="gdansk"></img>
+          <img src={woj} alt="gdansk"></img>
         </article>
         <article className="gda-box">
-          <img src={gda3} alt="gdansk"></img>
+          <img src={mar} alt="gdansk"></img>
           <aside>
             <h1>Ulica Mariacka – Bursztynowa Uliczka</h1>
             <p>
@@ -127,10 +132,10 @@ const Gdansk = () => {
               także oryginalne elementy wyposażenia Stoczni Gdańskiej.{" "}
             </h3>
           </aside>
-          <img src={gda4} alt="gdansk"></img>
+          <img src={ecs} alt="gdansk"></img>
         </article>
         <article className="gda-box">
-          <img src={gda5} alt="gdansk"></img>
+          <img src={gda6} alt="gdansk"></img>
           <aside>
             <h1>Morze Bałtyckie</h1>
             <p>
@@ -151,10 +156,10 @@ const Gdansk = () => {
               urokliwych polskich rzek.{" "}
             </h3>{" "}
           </aside>
-          <img src={gda6} alt="gdansk"></img>
+          <img src={mot} alt="gdansk"></img>
         </article>
         <article className="gda-box">
-          <img src={gda5} alt="gdansk"></img>
+          <img src={gda4} alt="gdansk"></img>
           <aside>
             <h1>Brama Żuraw</h1>
             <p>
@@ -173,7 +178,7 @@ const Gdansk = () => {
               wrześniu 1939 roku
             </h3>{" "}
           </aside>
-          <img src={gda4} alt="gdansk"></img>
+          <img src={wes} alt="gdansk"></img>
         </article>
       </article>
       <StayTuned/>

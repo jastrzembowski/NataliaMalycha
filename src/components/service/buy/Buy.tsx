@@ -1,6 +1,12 @@
 import React from "react";
 import "./buy.scss";
 import Slider from "react-slick";
+import kre from "../../../images/service/kre.jpg";
+import dok from "../../../images/service/dok.jpg";
+import spo from "../../../images/service/spo.jpg";
+import neg from "../../../images/service/neg.jpg";
+import nat15 from "../../../images/service/nat15.jpg";
+
 import ser1 from "../../../images/service/ser1.jpg";
 import ser2 from "../../../images/service/ser2.jpg";
 import ser3 from "../../../images/service/ser3.jpg";
@@ -62,10 +68,10 @@ const Buy = () => {
               rzetelne oraz sprawdzone oferty.
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={spo} alt="buy1"></img>
         </div>
         <div className="buy-text-2">
-          <img src={ser1} alt="buy1"></img>
+          <img src={neg} alt="buy1"></img>
           <article>
             <h3>Proces negocjacji</h3>
             <p>
@@ -96,10 +102,10 @@ const Buy = () => {
               mnie tajemnic – możesz więc zaufać mi w tej kwestii.
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={dok} alt="buy1"></img>
         </div>
         <div className="buy-text-2">
-          <img src={ser1} alt="buy1"></img>
+          <img src={kre} alt="buy1"></img>
           <article>
             <h3>Kredyt na zakup i ubezpieczenie nieruchomości</h3>
             <p>
@@ -125,7 +131,7 @@ const Buy = () => {
               gminy w celu ustalenia podatku od nieruchomości.
             </p>
           </article>
-          <img src={ser1} alt="buy1"></img>
+          <img src={nat15} alt="buy1"></img>
         </div>
         <h1>Zapraszam do współpracy</h1>
       </div>

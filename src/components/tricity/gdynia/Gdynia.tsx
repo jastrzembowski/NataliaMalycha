@@ -1,7 +1,15 @@
 import React from "react";
 import "../gdansk/gdansk.scss";
-import gdy2 from "../../../images/gdynia/gdy2.jpg";
-import gdy3 from "../../../images/gdynia/gdy1.jpg";
+import dar from "../../../images/gdynia/dar.jpg";
+import emig from "../../../images/gdynia/emig.jpg";
+import kamien from "../../../images/gdynia/kamien.jpg";
+import klif from "../../../images/gdynia/klif.jpg";
+import molo from "../../../images/gdynia/molo.jpg";
+import muz from "../../../images/gdynia/muz.jpg";
+import orp from "../../../images/gdynia/orp.jpg";
+import plaza from "../../../images/gdynia/plaza.jpg";
+import skw from "../../../images/gdynia/skw.jpg";
+
 import StayTuned from "../../utils/StayTuned";
 import Footer from "../../footer/Footer";
 
@@ -27,7 +35,7 @@ const Gdynia = () => {
         Co roku powstają nowe atrakcje dla dorosłych oraz dla dzieci, a modernistyczne zabytki odzyskują dawny blask. Gdynia to również wydarzenia kulturalne znane w Polsce oraz na świecie. Podczas Open’er Festival posłuchasz największych artystów światowej muzyki, a w czasie Festiwalu Polskich Filmów Fabularnych zobaczysz gwiazdy polskiego kina. Wydarzeń kulturalnych oraz atrakcji jest więcej.
         </h1>
         <article className="gda-box">
-          <img src={gdy3} alt="gdynia"></img>
+          <img src={skw} alt="gdynia"></img>
           <aside>
             <h1>Skwer Kościuszki i Molo Południowe w Gdyni</h1>
 
@@ -57,10 +65,10 @@ const Gdynia = () => {
               ludzi, którzy spędzili na morzu kawał życia.
             </p>
           </aside>
-          <img src={gdy2} alt="gdynia"></img>
+          <img src={dar} alt="gdynia"></img>
         </article>
         <article className="gda-box">
-          <img src={gdy3} alt="gdynia"></img>
+          <img src={orp} alt="gdynia"></img>
           <aside>
             <h1>Okręt-muzeum ORP „Błyskawica”</h1>
             <h3>
@@ -91,10 +99,10 @@ const Gdynia = () => {
               czasy współczesne.{" "}
             </p>
           </aside>
-          <img src={gdy2} alt="gdynia"></img>
+          <img src={muz} alt="gdynia"></img>
         </article>{" "}
         <article className="gda-box">
-          <img src={gdy3} alt="gdynia"></img>
+          <img src={kamien} alt="gdynia"></img>
           <aside>
             <h1>Kamienna Góra</h1>
 
@@ -125,10 +133,10 @@ const Gdynia = () => {
               sanitarne{" "}
             </p>
           </aside>
-          <img src={gdy2} alt="gdynia"></img>
+          <img src={plaza} alt="gdynia"></img>
         </article>{" "}
         <article className="gda-box">
-          <img src={gdy3} alt="gdynia"></img>
+          <img src={emig} alt="gdynia"></img>
           <aside>
             <h1>Muzeum Emigracji w Gdyni</h1>
 
@@ -155,10 +163,10 @@ const Gdynia = () => {
               tym wydarzeniu zdecydowano, że będzie miało długość 180 m.{" "}
             </p>
           </aside>
-          <img src={gdy2} alt="gdynia"></img>
+          <img src={molo} alt="gdynia"></img>
         </article>
         <article className="gda-box">
-          <img src={gdy3} alt="gdynia"></img>
+          <img src={klif} alt="gdynia"></img>
           <aside>
             <h1>Klif Orłowski i Kępa Redłowska</h1>
             <p>
