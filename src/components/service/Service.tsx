@@ -10,6 +10,7 @@ import natserv2 from "../../images/service/natserv2.png";
 import "./service.scss";
 import Footer from "../footer/Footer";
 import StayTuned from "../utils/StayTuned";
+const Fade = require("react-reveal/Fade")
 
 const Service = () => {
   const settings2 = {
@@ -61,7 +62,8 @@ const Service = () => {
         </Slider>
       </header>
       <article className="service-about">
-        <div className="serv-title">
+      <Fade bottom>
+  <div className="serv-title">
           <h3>
             Doświadczenie w branży umożliwia mi precyzyjnie dopasować strategię
             działań do oczekiwań Klientów i sytuacji na rynku nieruchomości.
@@ -70,8 +72,10 @@ const Service = () => {
             "Do każdej transakcji podchodzę indywidualnie – wiem że w każdej z
             nich kryje się inna historia, za którą stoją konkretni ludzie."
           </h4>
-        </div>
+        </div></Fade>        <Fade bottom>
+
         <div className="header-service__text">
+          
           <div className="service-text__container">
             <h3>O USŁUGACH</h3>
             <h4>
@@ -88,7 +92,9 @@ const Service = () => {
           </div>
           <img src={servmain} alt="services img" />
         </div>
-        <div className="serv-text-box">
+        </Fade>
+        <div className="serv-text-box">        <Fade bottom>
+
           <div className="bg-holder">
             <div className="img-holder">
               <h3>
@@ -123,10 +129,12 @@ const Service = () => {
                 zakupem.
               </p>
             </div>
-          </div>
+          </div></Fade>
         </div>
       </article>
       <article className="service-link_box">
+      <Fade bottom>
+
         <div className="bg-box">
           <h1>Moje usługi</h1>
           <div className="serv-windows">
@@ -148,10 +156,13 @@ const Service = () => {
               <Link to="/service/buy">   <button>Zobacz więcej</button></Link>
             </div>
           </div>
-        </div>
+        </div></Fade>
       </article>
-    <StayTuned/>
-      <Footer />
+      <Fade bottom>
+
+    <StayTuned/>  </Fade>      <Fade bottom>
+
+      <Footer /></Fade>
     </>
   );
 };

@@ -60,7 +60,7 @@ const Nav = () => {
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>
-        <h3>MEET ME</h3>
+       <Link to="/contact" > <h3>MEET ME</h3></Link>
       </nav>
       <article className={!active ? "menu-hidden" : "side-menu"}>
         <label

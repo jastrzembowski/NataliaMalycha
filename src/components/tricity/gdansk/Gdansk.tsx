@@ -12,6 +12,7 @@ import gda4 from "../../../images/gdansk/gda4.jpg";
 import gda6 from "../../../images/gdansk/gda6.jpg";
 import StayTuned from "../../utils/StayTuned";
 import Footer from "../../footer/Footer";
+const Fade = require("react-reveal/Fade")
 
 const Gdansk = () => {
   return (
@@ -22,15 +23,22 @@ const Gdansk = () => {
       </header>
       <article className="gda-about">
         <article className="gda-about__head">
+        <Fade bottom>
+
           <h1>Najpopularniejsze atrakcje Gdańska</h1>
           <p>
             Przedstawię Ci kilka pomysłów na spędzenie czasu w Gdańsku. Oto te
             które moim zdaniem zasługują na uwagę...
           </p>
+          </Fade>
         </article>
-
+        <Fade bottom>
         <article className="gda-box">
+      
+
           <img src={dlu} alt="gdansk"></img>
+       
+
           <aside>
             <h1>Długi Targ i Ulica Długa</h1>
             <h3>
@@ -47,6 +55,9 @@ const Gdansk = () => {
             </p>
           </aside>
         </article>
+        </Fade>
+        <Fade bottom>
+
         <article className="gda-box">
           <aside>
             <h1>Fontanna Neptuna w Gdańsku</h1>
@@ -62,6 +73,9 @@ const Gdansk = () => {
           </aside>
           <img src={nep} alt="gdansk"></img>
         </article>
+        </Fade>
+        <Fade bottom>
+
         <article className="gda-box">
           <img src={baz} alt="gdansk"></img>
           <aside>
@@ -82,6 +96,8 @@ const Gdansk = () => {
             </p>
           </aside>
         </article>
+        </Fade>        <Fade bottom>
+
         <article className="gda-box">
           <aside>
             <h1>Muzeum II Wojny Światowej</h1>
@@ -102,6 +118,8 @@ const Gdansk = () => {
           </aside>
           <img src={woj} alt="gdansk"></img>
         </article>
+        </Fade>        <Fade bottom>
+
         <article className="gda-box">
           <img src={mar} alt="gdansk"></img>
           <aside>
@@ -119,6 +137,8 @@ const Gdansk = () => {
             </p>
           </aside>
         </article>
+        </Fade>        <Fade bottom>
+
         <article className="gda-box">
           <aside>
             <h1>Europejskie Centrum Solidarności</h1>
@@ -134,6 +154,8 @@ const Gdansk = () => {
           </aside>
           <img src={ecs} alt="gdansk"></img>
         </article>
+        </Fade>        <Fade bottom>
+
         <article className="gda-box">
           <img src={gda6} alt="gdansk"></img>
           <aside>
@@ -146,6 +168,8 @@ const Gdansk = () => {
             </p>{" "}
           </aside>
         </article>
+        </Fade>        <Fade bottom>
+
         <article className="gda-box">
           <aside>
             <h1>Motława</h1>
@@ -158,6 +182,8 @@ const Gdansk = () => {
           </aside>
           <img src={mot} alt="gdansk"></img>
         </article>
+        </Fade>        <Fade bottom>
+
         <article className="gda-box">
           <img src={gda4} alt="gdansk"></img>
           <aside>
@@ -170,6 +196,8 @@ const Gdansk = () => {
             </p>{" "}
           </aside>
         </article>
+        </Fade>
+        <Fade bottom>
         <article className="gda-box">
           <aside>
             <h1>Westerplatte</h1>
@@ -180,9 +208,15 @@ const Gdansk = () => {
           </aside>
           <img src={wes} alt="gdansk"></img>
         </article>
+         </Fade>
+
       </article>
+      <Fade bottom>
+
       <StayTuned/>
-      <Footer/>
+      </Fade>
+      <Fade bottom>
+ <Footer/></Fade>
     </>
   );
 };
