@@ -27,14 +27,15 @@ const Footer = () => {
         <p>80-586 Gdynia</p>
         <h6>Tel. +47 787 665 881</h6>
         <div className="media-box">
-          <FontAwesomeIcon icon={faEnvelope} />
-          <a href="https://www.facebook.com/InVilla">
+        <a href="mailto:n.malycha@invilla.pl">
+          <FontAwesomeIcon icon={faEnvelope} /></a>
+          <a href="https://www.facebook.com/profile.php?id=100076578124773">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="https://www.linkedin.com/in/natalia-ma%C5%82ycha-58097883/">
+          <a href="https://www.linkedin.com/in/natalia-małycha-58097883/">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
-          <a href="https://www.instagram.com/invilla_nieruchomosci/">
+          <a href="https://www.instagram.com/nataliamalycha_nm/">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
         </div>{" "}
