@@ -1,7 +1,7 @@
 import React from "react";
 import "./footer.scss";
 import { Link } from "react-router-dom";
-import nmlogo from "../../images/nmlogo.png";
+import nmlogo from "../../images/nmlogo.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {

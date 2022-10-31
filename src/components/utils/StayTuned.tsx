@@ -1,7 +1,5 @@
 import React from "react";
 import "./staytuned.scss";
-import { initializeApp } from 'firebase/app';
-
 import { doc, getFirestore, setDoc } from "@firebase/firestore";
 import { uuidv4 } from "@firebase/util";
 

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./tricity.scss";
 import StayTuned from "../utils/StayTuned";
 import Footer from "../footer/Footer";
-import gda4 from "../../images/gdansk/gda4.jpg";
-import gdy2 from "../../images/gdynia/gdy2.jpg";
-import sop1 from "../../images/sopot/sop1.jpg";
+import gda4 from "../../images/gdansk/gda4.webp";
+import gdy2 from "../../images/gdynia/gdy2.webp";
+import sop1 from "../../images/sopot/sop1.webp";
 const Fade = require("react-reveal/Fade");
 
 const Tricity = () => {

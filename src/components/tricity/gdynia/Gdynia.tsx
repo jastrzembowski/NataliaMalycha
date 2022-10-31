@@ -1,14 +1,14 @@
 import React from "react";
 import "../gdansk/gdansk.scss";
-import dar from "../../../images/gdynia/dar.jpg";
-import emig from "../../../images/gdynia/emig.jpg";
-import kamien from "../../../images/gdynia/kamien.jpg";
+import dar from "../../../images/gdynia/dar.webp";
+import emig from "../../../images/gdynia/emig.webp";
+import kamien from "../../../images/gdynia/kamien.webp";
 import klif from "../../../images/gdynia/klif.jpg";
-import molo from "../../../images/gdynia/molo.jpg";
-import muz from "../../../images/gdynia/muz.jpg";
-import orp from "../../../images/gdynia/orp.jpg";
-import plaza from "../../../images/gdynia/plaza.jpg";
-import skw from "../../../images/gdynia/skw.jpg";
+import molo from "../../../images/gdynia/molo.webp";
+import muz from "../../../images/gdynia/muz.webp";
+import orp from "../../../images/gdynia/orp.webp";
+import plaza from "../../../images/gdynia/plaza.webp";
+import skw from "../../../images/gdynia/skw.webp";
 
 import StayTuned from "../../utils/StayTuned";
 import Footer from "../../footer/Footer";

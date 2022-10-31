@@ -35,7 +35,7 @@ function App() {
         <Route path="/sopot" element={<Sopot />} />
         <Route path="/gdynia" element={<Gdynia />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<Contact name="" email="" id="" initialState="" lastName="" phone="" message="" allow={false} />} />
         <Route path="/service" element={<Service />} />
         <Route path="/service/sell" element={<Sell />} />
         <Route path="/service/buy" element={<Buy />} />

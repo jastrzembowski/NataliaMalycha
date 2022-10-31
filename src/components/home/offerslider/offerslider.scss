@@ -52,7 +52,6 @@
 .slider-button {
   opacity: 0;
   display: flex;
-  width: 420px;
   justify-content: center;
   transition: 0.5s ease-in-out;
 
@@ -162,7 +161,6 @@
       background-color: #fff;
       opacity: 1;
       transform: scale(1);
-      padding: 20;
     }
   }
 }
@@ -203,6 +201,7 @@
   .slider-offer{
     background-color: white;
     opacity: 1;
+    width: auto;
   }
   .slider-button{
     opacity: 1;

@@ -1,12 +1,12 @@
 import React from "react";
 import Slider from "react-slick";
-import ser1 from "../../images/service/ser1.jpg";
-import ser2 from "../../images/service/ser2.jpg";
-import ser3 from "../../images/service/ser3.jpg";
-import ser4 from "../../images/service/ser4.jpg";
+import ser1 from "../../images/service/ser1.webp";
+import ser2 from "../../images/service/ser2.webp";
+import ser3 from "../../images/service/ser3.webp";
+import ser4 from "../../images/service/ser4.webp";
 import { Link } from "react-router-dom";
-import servmain from "../../images/service/servmain.png";
-import natserv2 from "../../images/service/natserv2.png";
+import servmain from "../../images/service/servmain.webp";
+import natserv2 from "../../images/service/natserv2.webp";
 import "./service.scss";
 import Footer from "../footer/Footer";
 import StayTuned from "../utils/StayTuned";

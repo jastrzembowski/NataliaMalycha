@@ -1,9 +1,9 @@
 import React from "react";
 import "./home.scss";
 import { Link } from "react-router-dom";
-import servmain2 from "../../images/servmain2.png";
-import natmain from "../../images/natmain.png";
-import natmain2 from "../../images/natmain2.png";
+import servmain2 from "../../images/servmain2.webp";
+import natmain from "../../images/natmain.webp";
+import natmain2 from "../../images/natmain2.webp";
 import Footer from "../footer/Footer";
 import OfferSlider from "./offerslider/OfferSlider";
 import StayTuned from "../utils/StayTuned";

@@ -1,8 +1,8 @@
 import React from "react";
 import "./about.scss";
-import nat7 from "../../images/nat7.jpg";
-import nat10 from "../../images/nat17.jpg";
-import nat6 from "../../images/nat6.jpg";
+import nat7 from "../../images/nat7.webp";
+import nat10 from "../../images/nat17.webp";
+import nat6 from "../../images/nat6.webp";
 import StayTuned from "../utils/StayTuned";
 import Footer from "../footer/Footer";
 const Fade = require("react-reveal/Fade");

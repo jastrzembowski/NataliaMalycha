@@ -7,9 +7,9 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import sidepic from "../../images/sidepic.jpg";
-import nmlogo from "../../images/nmlogo.png";
-import nmlogowhite from "../../images/nmlogowhite.png";
+import sidepic from "../../images/sidepic.webp";
+import nmlogo from "../../images/nmlogo.webp";
+import nmlogowhite from "../../images/nmlogowhite.webp";
 import "./nav.scss";
 import StayTuned from "../utils/StayTuned";
 

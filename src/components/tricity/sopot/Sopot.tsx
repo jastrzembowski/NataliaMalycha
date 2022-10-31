@@ -1,12 +1,12 @@
 import React from "react";
 import "../gdansk/gdansk.scss";
-import gdy3 from "../../../images/sopot/sop1.jpg";
+import gdy3 from "../../../images/sopot/sop1.webp";
 import ergo from "../../../images/sopot/ergo.webp";
-import hipo from "../../../images/sopot/hipo.jpg";
-import lysa from "../../../images/sopot/lysa.jpg";
-import mon from "../../../images/sopot/mon.jpg";
-import oper from "../../../images/sopot/oper.jpg";
-import pla from "../../../images/sopot/pla.jpeg";
+import hipo from "../../../images/sopot/hipo.webp";
+import lysa from "../../../images/sopot/lysa.webp";
+import mon from "../../../images/sopot/mon.webp";
+import oper from "../../../images/sopot/oper.webp";
+import pla from "../../../images/sopot/pla.webp";
 
 import StayTuned from "../../utils/StayTuned";
 import Footer from "../../footer/Footer";
