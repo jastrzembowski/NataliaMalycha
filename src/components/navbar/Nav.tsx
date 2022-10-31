@@ -199,8 +199,8 @@ const Nav = () => {
             <button>Zobacz więcej</button>
           </div>
         </div>
-        <StayTuned />
-      </article>
+        <StayTuned name="" email="" id="" initialState=""
+ />      </article>
     </>
   );
 };

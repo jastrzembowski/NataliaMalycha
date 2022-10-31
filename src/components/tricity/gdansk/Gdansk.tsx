@@ -213,8 +213,8 @@ const Gdansk = () => {
       </article>
       <Fade bottom>
 
-      <StayTuned/>
-      </Fade>
+      <StayTuned name="" email="" id="" initialState=""
+ />      </Fade>
       <Fade bottom>
  <Footer/></Fade>
     </>

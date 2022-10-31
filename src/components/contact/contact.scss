@@ -36,9 +36,9 @@
     width: 60%;
     height: 500px;
     background-color: $light-gray;
-    margin-bottom: 100px;
     display: flex;
     flex-direction: row;
+ 
     button {
       text-align: center;
       padding: 13px;
@@ -144,7 +144,14 @@
         transform: translateY(-100px);
       }
     }
+    
   }
+.contact-info_text{
+  width: 60%;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 80px;
+}
 }
 @media (max-width: 750px ) {
   .contact-cont .contact-box{

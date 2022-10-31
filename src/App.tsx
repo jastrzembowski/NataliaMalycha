@@ -14,6 +14,10 @@ import Gdansk from "./components/tricity/gdansk/Gdansk";
 import Sopot from "./components/tricity/sopot/Sopot";
 import Gdynia from "./components/tricity/gdynia/Gdynia";
 import Tricity from "./components/tricity/Tricity";
+import Polityka from "./components/footer/Polityka";
+import Regulamin from "./components/footer/Regulamin";
+import Nota from "./components/footer/Nota";
+import Rodo from "./components/footer/Rodo";
 
 function App() {
   return (
@@ -22,6 +26,10 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/rodo" element={<Rodo/>}/>
+        <Route path="/nota-prawna" element={<Nota/>}/>
+        <Route path="/polityka-prywatnosci" element={<Polityka/>}/>
+        <Route path="/regulamin-serwisu" element={<Regulamin/>}/>
         <Route path="/tricity" element={<Tricity/>}/>
         <Route path="/gdansk" element={<Gdansk />} />
         <Route path="/sopot" element={<Sopot />} />

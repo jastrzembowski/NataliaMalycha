@@ -22,7 +22,7 @@ footer {
     width: 150px;
   }
 }
-.footer-links {
+.footer-links  {
   grid-area: 1 / 2 / 2 / 3;
   height: 60%;
   padding-top: 10%;
@@ -34,9 +34,16 @@ footer {
   justify-content: center;
   text-transform: uppercase;
   line-height: 1;
-  li {
-    margin: 8px;
+  li, a {
+    margin: 4px;
     cursor: pointer;
+    text-decoration: none;
+    color: $main-dark;
+    &:hover{
+      color: $main-green;
+      transition: 0.3s ease-in-out;
+    }
+    
   }
 }
 .footer-address {
@@ -84,5 +91,27 @@ footer {
       text-align: center;
       padding: 5px 5px 50px;
     }
+  }
+}
+.rodo{
+  padding-top: 150px;
+  background-color: $light-gray;
+  background: linear-gradient(180deg, rgba(102,128,121,1) 0%, rgba(102,128,121,0) 18%);
+
+  text-align: center;
+li{
+  text-decoration: none;
+  list-style-type: none;
+}
+}
+.nota{
+  padding-top: 200px;
+  background-color: $light-green;
+  height: 100vh;
+  text-align: center;
+  margin: auto;
+  color: $main-dark;
+  h1{
+    font-family: "Josefin Sans";
   }
 }

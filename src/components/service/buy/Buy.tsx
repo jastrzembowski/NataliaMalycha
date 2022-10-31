@@ -153,7 +153,8 @@ const Buy = () => {
       </div>
       <Fade bottom>
         {" "}
-        <StayTuned />
+        <StayTuned name="" email="" id="" initialState=""
+ />
       </Fade>{" "}
       <Fade bottom>
         <Footer />
