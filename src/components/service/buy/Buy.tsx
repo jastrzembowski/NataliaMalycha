@@ -12,6 +12,8 @@ import ser3 from "../../../images/service/ser3.webp";
 import ser4 from "../../../images/service/ser4.webp";
 import Footer from "../../footer/Footer";
 import StayTuned from "../../utils/StayTuned";
+import { useTranslation } from "react-i18next";
+
 const Fade = require("react-reveal/Fade");
 
 const Buy = () => {
@@ -25,137 +27,86 @@ const Buy = () => {
     autoplayspeed: 1000,
     infinite: true,
   };
+  const { t } = useTranslation();
+
   return (
     <>
       <header className="service-header__container buy-header">
         <Slider {...settings2}>
           <div className="service-img-box">
-            <h1>ZAKUP NIERUCHOMOŚCI</h1>
+            <h1>{t("buy-a-prop")}</h1>
             <img src={ser1} alt="slider-img1" />
-          </div>{" "}
+          </div>
           <div className="service-img-box">
-            <h1>ZAKUP NIERUCHOMOŚCI</h1>
+            <h1>{t("buy-a-prop")}</h1>
             <img src={ser2} alt="slider-img2" />
-          </div>{" "}
+          </div>
           <div className="service-img-box">
-            <h1>ZAKUP NIERUCHOMOŚCI</h1>
+            <h1>{t("buy-a-prop")}</h1>
             <img src={ser3} alt="slider-img3" />
-          </div>{" "}
+          </div>
           <div className="service-img-box">
-            <h1>ZAKUP NIERUCHOMOŚCI</h1>
+            <h1>{t("buy-a-prop")}</h1>
             <img src={ser4} alt="slider-img4" />
           </div>
         </Slider>
       </header>
       <div className="buy-text-box">
         <Fade bottom>
-          {" "}
-          <h2>Spotkajmy się, napijmy się wyśmienitej kawy..</h2>
-        </Fade>{" "}
+          <h2>{t("lets-meet")}</h2>
+        </Fade>
         <Fade bottom>
           <div className="buy-text">
             <article>
-              <h3>Przedstawienie ofert i prezentacja nieruchomości</h3>
-              <p>
-                Wszystko zaczyna się od spotkania i szczegółowego omówienia
-                Twoich potrzeb oraz marzeń. Zakup nieruchomości to poważna
-                decyzja, dlatego tak ważne jest aby zaufać ekspertom, którzy
-                doskonale znają rynek, podczas spotkania omówimy sobie co jest
-                dla Ciebie ważne, co najważniejsze, a co będzie miłym dodatkiem.
-                Dzięki wielkości i zróżnicowaniu oferowanych przez biuro Invilla
-                Nieruchomości, z którym współpracuję ofert (na wyłączność)
-                mieszkań, apartamentów i domów, ale także dlatego, że
-                współpracujemy z zaufanymi przedstawicielami. Dzięki pracy ze
-                mną podczas poszukiwań nieruchomości przede wszystkim
-                zaoszczędzisz czas. Prezentacje wybrane przez Ciebie
-                nieruchomości przygotuję w wybranych przez Ciebie terminach i
-                zaprezentuje Ci wyłącznie rzetelne oraz sprawdzone oferty.
-              </p>
+              <h3>{t("present-prop")}</h3>
+              <p>{t("it-all-starts")}</p>
             </article>
             <img src={spo} alt="buy1"></img>
           </div>
-        </Fade>{" "}
+        </Fade>
         <Fade bottom>
           <div className="buy-text-2">
             <img src={neg} alt="buy1"></img>
             <article>
-              <h3>Proces negocjacji</h3>
-              <p>
-                Pracując ze mną jestem do Twojej dyspozycji – będę z Tobą
-                podczas negocjacji ceny, szczegółów dotyczących przekazania
-                nieruchomości, sposobów i terminów płatności oraz wyposażenia.
-                Znamy się na kwestiach związanych z kupnem nieruchomości w
-                Trójmieście, pomogę podjąć decyzję, sprawdzę ewentualną stopę
-                zwrotu z danej inwestycji, zadbam o to, aby ustalone warunki
-                były dla Ciebie jak najbardziej korzystne.
-              </p>
+              <h3> {t("buy-nego")}</h3>
+              <p> {t("buy-nego-text")}</p>
             </article>
           </div>
-        </Fade>{" "}
+        </Fade>
         <Fade bottom>
           <div className="buy-text">
             <article>
-              <h3>Przygotowanie dokumentów i formalności</h3>
-              <p>
-                Sprawdzę nieruchomość od strony prawnej, tak aby zakup był
-                bezpieczny. Pomogę Ci również po tym, gdy podejmiesz już decyzję
-                zakupową – zbiorę wszystkie niezbędne dokumenty i odciążę Cię z
-                formalności, które jak zapewne wiesz, bywają uciążliwe. Odwiedzę
-                za Ciebie spółdzielnię, wspólnotę, urząd miasta, urząd gminy,
-                starostwo, ZUS, urząd skarbowy oraz notariusza. Będę z Tobą u
-                notariusza w celu podpisania aktu, w banku, czy w dniu
-                przekazania nieruchomości. Wiem, na jakie szczegóły warto
-                zwrócić w takich sytuacjach uwagę i sprawię, że będziesz czuć
-                się bezpiecznie. Cały proces kupna mieszkań z rynku wtórnego w
-                Trójmieście nie ma dla mnie tajemnic – możesz więc zaufać mi w
-                tej kwestii.
-              </p>
+              <h3> {t("buy-prep")}</h3>
+              <p>{t("buy-prep-text")}</p>
             </article>
             <img src={dok} alt="buy1"></img>
           </div>
-        </Fade>{" "}
+        </Fade>
         <Fade bottom>
           <div className="buy-text-2">
             <img src={kre} alt="buy1"></img>
             <article>
-              <h3>Kredyt na zakup i ubezpieczenie nieruchomości</h3>
-              <p>
-                Współpracuję z niezależnymi i zaufanymi doradcami finansowymi,
-                którzy znajdą dla Ciebie kredyt na najlepszych warunkach, a Ty
-                oszczędzisz czas i wybierzesz najkorzystniejsze warunki. Pomogę
-                Ci w ubezpieczeniu Twojego nowego mieszkania, apartamentu czy
-                domu, ponieważ wiem, jak ważne jest bezpieczeństwo. Znam
-                świetnego brokera.
-              </p>
+              <h3> {t("buy-cred")}</h3>
+              <p>{t("buy-cred-text")}</p>
             </article>
           </div>
-        </Fade>{" "}
+        </Fade>
         <Fade bottom>
           <div className="buy-text">
             <article>
-              <h3>Pomoc po finalizacji transakcji</h3>
-              <p>
-                W Twoim imieniu podpiszę umowę na dostarczanie mediów do
-                nieruchomości (gazu, prądu, wody, Internetu i telewizji kablowej
-                bądź satelitarnej), pomogę złożyć wnioski w sądzie
-                wieczystoksięgowym celem wykreślenia hipoteki, jeśli taka
-                ciążyła na nieruchomości wcześniej, oraz zgłoszę Cię jako nowego
-                nabywcę w spółdzielni lub wspólnocie oraz w urzędzie miasta, lub
-                urzędzie gminy w celu ustalenia podatku od nieruchomości.
-              </p>
+              <h3> {t("buy-help")}</h3>
+              <p>{t("buy-help-text")} </p>
             </article>
             <img src={nat15} alt="buy1"></img>
           </div>
-        </Fade>{" "}
+        </Fade>
         <Fade bottom>
-          <h1>Zapraszam do współpracy</h1>
+          <h1> {t("invitation")}</h1>
         </Fade>
       </div>
       <Fade bottom>
-        {" "}
-        <StayTuned name="" email="" id="" initialState=""
- />
-      </Fade>{" "}
+        <StayTuned name="" email="" id="" initialState="" />
+      </Fade>
       <Fade bottom>
         <Footer />
       </Fade>

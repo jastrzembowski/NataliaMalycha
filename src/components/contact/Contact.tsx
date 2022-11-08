@@ -4,8 +4,9 @@ import "./contact.scss";
 import { doc, getFirestore, setDoc } from "@firebase/firestore";
 import { uuidv4 } from "@firebase/util";
 import { Link } from "react-router-dom";
+import { withTranslation, WithTranslation } from "react-i18next";
 
-interface Props {
+interface IProps extends WithTranslation {
   name: string;
   lastName: string;
   phone: string;
@@ -15,6 +16,7 @@ interface Props {
   id: string;
   initialState: Object;
 }
+
 interface MyState {
   name: string;
   lastName: string;
@@ -25,7 +27,7 @@ interface MyState {
   id: string;
 }
 
-class Contact extends React.Component<Props, MyState> {
+class Contact extends React.Component<IProps, MyState> {
   initialState: {
     name: string;
     lastName: string;
@@ -35,7 +37,7 @@ class Contact extends React.Component<Props, MyState> {
     email: string;
     id: string;
   };
-  constructor(props: Props) {
+  constructor(props: IProps) {
     super(props);
     this.state = {
       name: "",
@@ -97,15 +99,15 @@ class Contact extends React.Component<Props, MyState> {
       <>
         <header className="contact-cont">
           <article className="contact-title">
-            <h1>Poznajmy się!</h1>
+            <h1>{this.props.t("con-tit")}</h1>
             <p>
-              Rozpocznij naszą współpracę <br />
-              od krótkiej wiadomości do mnie
+              {this.props.t("con-text1")} <br />
+              {this.props.t("con-text2")}
             </p>
           </article>
           <div className="contact-box">
             <form>
-              <h1>Pozostańmy w kontakcie</h1>
+              <h1> {this.props.t("con-subtitle")}</h1>
 
               <input
                 className="name"
@@ -114,7 +116,7 @@ class Contact extends React.Component<Props, MyState> {
                 onChange={this.handleOnChange}
                 value={this.state.name}
                 required
-                placeholder="IMIĘ"
+                placeholder={this.props.t("name")}
               ></input>
               <input
                 className="lastname"
@@ -123,7 +125,7 @@ class Contact extends React.Component<Props, MyState> {
                 onChange={this.handleOnChange}
                 value={this.state.lastName}
                 required
-                placeholder="NAZWISKO"
+                placeholder={this.props.t("lastname")}
               ></input>
               <input
                 className="email"
@@ -132,7 +134,7 @@ class Contact extends React.Component<Props, MyState> {
                 onChange={this.handleOnChange}
                 value={this.state.email}
                 required
-                placeholder="EMAIL"
+                placeholder={this.props.t("email")}
               ></input>
               <input
                 className="phone"
@@ -140,7 +142,7 @@ class Contact extends React.Component<Props, MyState> {
                 name="phone"
                 onChange={this.handleOnChange}
                 value={this.state.phone}
-                placeholder="NUMER TELEFONU"
+                placeholder={this.props.t("phone")}
               ></input>
               <textarea
                 className="textbox"
@@ -148,40 +150,39 @@ class Contact extends React.Component<Props, MyState> {
                 onChange={this.handleTextChange}
                 value={this.state.message}
                 required
-                placeholder="WIADOMOŚĆ"
+                placeholder={this.props.t("message")}
               ></textarea>
               <div className="submit">
                 <aside>
                   <input type="checkbox" onChange={this.checkChange}></input>
-                  <span>Akceptuję zasady <Link to="/polityka-prywatnosci"> polityki prywatności </Link></span>
+                  <span>
+                    {this.props.t("accept")}
+                    <Link to="/polityka-prywatnosci">
+                      {this.props.t("acc-priv")}
+                    </Link>
+                  </span>
                 </aside>
                 <button
                   type="submit"
                   disabled={this.state.allow === false}
                   onClick={this.addToFirestore}
                 >
-                  Wyślij
+                  {this.props.t("send")}
                 </button>
               </div>
             </form>
             <aside>
-              <p>Biuro:</p>
-              <p>ul. Węglowa 22 U 6</p>
+              <p>{this.props.t("office")}</p>
+              <p>{this.props.t("off-address")}</p>
               <p>81-341 Gdynia</p>
-              <p>Tel: +48 787 665 881</p>
+              <p>+48 787 665 881</p>
             </aside>
           </div>
-          <p className="contact-info_text">
-            Administratorem Państwa danych osobowych jest Natalia Malychaz
-            siedzibą w Gdyni. Dane wpisane w formularzu kontaktowym będą
-            przetwarzane w celu udzielenia odpowiedzi na przesłane zapytanie
-            zgodnie z klauzulą informacyjną dostępną w siedzibie Administratora
-            oraz na stronie internetowej.
-          </p>
+          <p className="contact-info_text">{this.props.t("administr")}</p>
         </header>
         <Footer />
       </>
     );
   }
 }
-export default Contact;
+export default withTranslation()(Contact);

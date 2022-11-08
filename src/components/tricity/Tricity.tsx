@@ -6,9 +6,13 @@ import Footer from "../footer/Footer";
 import gda4 from "../../images/gdansk/gda4.webp";
 import gdy2 from "../../images/gdynia/gdy2.webp";
 import sop1 from "../../images/sopot/sop1.webp";
+import { useTranslation } from "react-i18next";
+
 const Fade = require("react-reveal/Fade");
 
 const Tricity = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <header className="tri-header">
@@ -17,7 +21,7 @@ const Tricity = () => {
       <article className="service-link_box">
         <div className="bg-box">
           <Fade bottom>
-            <h1>Znajdź swoje wymarzone miejsce</h1>
+            <h1>{t("find-dream")}</h1>
           </Fade>
           <Fade bottom>
             <div className="serv-windows">
@@ -25,26 +29,21 @@ const Tricity = () => {
                 <img src={gda4} alt="box" />
                 <h3>Gdańsk</h3>
                 <Link to="/gdansk">
-                  {" "}
-                  <button>Zobacz więcej</button>
+                  <button> {t("see-more")}</button>
                 </Link>
               </div>
-
               <div className="wind-box">
                 <img src={gdy2} alt="box" />
                 <h3>Gdynia</h3>
                 <Link to="/gdynia">
-                  {" "}
-                  <button>Zobacz więcej</button>
+                  <button> {t("see-more")}</button>
                 </Link>
               </div>
-
               <div className="wind-box">
                 <img src={sop1} alt="box" />
                 <h3>Sopot</h3>
                 <Link to="/sopot">
-                  {" "}
-                  <button>Zobacz więcej</button>
+                  <button> {t("see-more")}</button>
                 </Link>
               </div>
             </div>
@@ -52,8 +51,8 @@ const Tricity = () => {
         </div>
       </article>
       <Fade bottom>
-      <StayTuned name="" email="" id="" initialState=""
- />      </Fade>
+        <StayTuned name="" email="" id="" initialState="" />
+      </Fade>
       <Fade bottom>
         <Footer />
       </Fade>

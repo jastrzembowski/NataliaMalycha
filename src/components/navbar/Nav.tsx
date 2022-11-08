@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -12,13 +12,27 @@ import nmlogo from "../../images/nmlogo.webp";
 import nmlogowhite from "../../images/nmlogowhite.webp";
 import "./nav.scss";
 import StayTuned from "../utils/StayTuned";
+import { useTranslation } from "react-i18next";
+import i18next from "i18next";
 
 const Nav = () => {
+  const { i18n, t } = useTranslation();
+
   const [navbar, setNavbar] = useState(false);
   const [active, setActive] = useState(false);
   const [service, setService] = useState(false);
   const [tricity, setTricity] = useState(false);
+  const loc = localStorage.getItem("i18nextLng");
 
+  useEffect(() => {
+    if (loc && loc?.length > 2) {
+      i18next.changeLanguage("en");
+    }
+  }, []);
+
+  const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    i18n.changeLanguage(e.target.value);
+  };
   const changeNav = () => {
     if (window.scrollY >= 50) {
       setNavbar(true);
@@ -49,8 +63,21 @@ const Nav = () => {
           ></img>
         </Link>
         <div className="media-box">
+        <select
+            className="lang-select"
+            value={loc ? loc : ""}
+            onChange={handleLanguageChange}
+          >
+            <option value="en" className="lang-option">
+              🇬🇧
+            </option>
+            <option value="pl" className="lang-option">
+              🇵🇱
+            </option>
+          </select>
           <a href="mailto:n.malycha@invilla.pl">
-          <FontAwesomeIcon icon={faEnvelope} /></a>
+            <FontAwesomeIcon icon={faEnvelope} />
+          </a>
           <a href="https://www.facebook.com/profile.php?id=100076578124773">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
@@ -60,8 +87,11 @@ const Nav = () => {
           <a href="https://www.instagram.com/nataliamalycha_nm/">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
+   
         </div>
-       <Link to="/contact" > <h3>MEET ME</h3></Link>
+        <Link to="/contact">
+          <h3> {t("meet")}</h3>
+        </Link>
       </nav>
       <article className={!active ? "menu-hidden" : "side-menu"}>
         <label
@@ -82,15 +112,20 @@ const Nav = () => {
                   active ? () => setActive(false) : () => setActive(true)
                 }
               >
-                O mnie
+                {t("about")}
               </Link>
             </li>
             <li
               onClick={
-                service ? () => setService(false) : () => {setService(true);setTricity(false)}
+                service
+                  ? () => setService(false)
+                  : () => {
+                      setService(true);
+                      setTricity(false);
+                    }
               }
             >
-              Usługi
+              {t("service")}
             </li>
             <ul className={!service ? "service-hidden" : "side-service"}>
               <li>
@@ -100,7 +135,7 @@ const Nav = () => {
                     active ? () => setActive(false) : () => setActive(true)
                   }
                 >
-                  o usługach{" "}
+                  {t("abservice")}
                 </Link>
               </li>
               <li>
@@ -110,7 +145,7 @@ const Nav = () => {
                     active ? () => setActive(false) : () => setActive(true)
                   }
                 >
-                  Sprzedaż{" "}
+                  {t("sell")}
                 </Link>
               </li>
               <li>
@@ -120,7 +155,7 @@ const Nav = () => {
                     active ? () => setActive(false) : () => setActive(true)
                   }
                 >
-                  Kupno{" "}
+                  {t("buy")}
                 </Link>
               </li>
               <li>
@@ -130,16 +165,21 @@ const Nav = () => {
                     active ? () => setActive(false) : () => setActive(true)
                   }
                 >
-                  Wynajem
+                  {t("rent")}
                 </Link>
               </li>
             </ul>
             <li
               onClick={
-                tricity ? () => setTricity(false) : () => {setTricity(true);setService(false)}
+                tricity
+                  ? () => setTricity(false)
+                  : () => {
+                      setTricity(true);
+                      setService(false);
+                    }
               }
             >
-              Trójmiasto
+              {t("tricity")}
             </li>
             <ul className={!tricity ? "service-hidden" : "side-tricity"}>
               <li>
@@ -159,7 +199,7 @@ const Nav = () => {
                     active ? () => setActive(false) : () => setActive(true)
                   }
                 >
-                  Gdynia{" "}
+                  Gdynia
                 </Link>
               </li>
               <li>
@@ -169,13 +209,13 @@ const Nav = () => {
                     active ? () => setActive(false) : () => setActive(true)
                   }
                 >
-                  Sopot{" "}
+                  Sopot
                 </Link>
               </li>
             </ul>
             <li>
               <a href="https://invilla.pl/zespol/natalia-malycha/#properties">
-                Oferty
+                {t("offers")}
               </a>
             </li>
             <li>
@@ -185,22 +225,21 @@ const Nav = () => {
                   active ? () => setActive(false) : () => setActive(true)
                 }
               >
-                {" "}
-                Kontakt
+                {t("contact")}
               </Link>
             </li>
           </ul>
           <div className="side-offer-box">
-            <h3>Polecana oferta</h3>
+            <h3> {t("recommended")}</h3>
             <img src={sidepic} alt="sidepic"></img>
             <h4>
-              Apartament <br />w Sopocie
+              {t("apartment")} <br /> {t("in-sop")}
             </h4>
-            <button>Zobacz więcej</button>
+            <button> {t("see-more")}</button>
           </div>
         </div>
-        <StayTuned name="" email="" id="" initialState=""
- />      </article>
+        <StayTuned name="" email="" id="" initialState="" />
+      </article>
     </>
   );
 };

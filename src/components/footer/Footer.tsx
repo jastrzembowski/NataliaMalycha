@@ -9,13 +9,14 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer>
       <div className="footer-logo__holder">
         <Link to="/">
-          {" "}
           <img src={nmlogo} alt="nm logo"></img>
         </Link>
       </div>
@@ -24,19 +25,20 @@ const Footer = () => {
           <Link to="/rodo"> RODO </Link>
         </li>
         <li>
-          <Link to="/nota-prawna"> Nota Prawna</Link>
+          <Link to="/nota-prawna"> {t("notice")}</Link>
         </li>
         <li>
-          <Link to="/regulamin-serwisu"> Regulamin Serwisu </Link>
+          <Link to="/regulamin-serwisu">{t("terms")} </Link>
         </li>
         <li>
-          <Link to="/polityka-prywatnosci"> Polityka prywatności </Link>
+          <Link to="/polityka-prywatnosci"> {t("privacy")}</Link>
         </li>
       </ul>
       <div className="footer-address">
-        <p>ul. Węglowa 22 U 6</p>
+        <p>{t("office")}</p>
+        <p>{t("off-address")}</p>
         <p>81-341 Gdynia</p>
-        <p>Tel. +47 787 665 881</p>
+        <p>+47 787 665 881</p>
         <div className="media-box">
           <a href="mailto:n.malycha@invilla.pl">
             <FontAwesomeIcon icon={faEnvelope} />
@@ -50,7 +52,7 @@ const Footer = () => {
           <a href="https://www.instagram.com/nataliamalycha_nm/">
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-        </div>{" "}
+        </div>
       </div>
     </footer>
   );

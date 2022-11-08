@@ -2,8 +2,9 @@ import React from "react";
 import "./staytuned.scss";
 import { doc, getFirestore, setDoc } from "@firebase/firestore";
 import { uuidv4 } from "@firebase/util";
+import { withTranslation, WithTranslation } from 'react-i18next';
 
-interface Props{
+interface Props extends WithTranslation{
     name: string;
     email: string;
     id: string
@@ -17,6 +18,7 @@ interface MyState{
 class StayTuned extends React.Component<Props, MyState> {
   initialState: { name: string; email: string; id: string; };
   constructor(props: Props) {
+    
     super(props);
     this.state = {
       name: "",
@@ -51,7 +53,7 @@ class StayTuned extends React.Component<Props, MyState> {
     return (
       <div className="stay-tuned__container">
         <div className="stay-tuned__box">
-          <h3>Pozostańmy w kontakcie</h3>
+          <h3>{this.props.t('stay-tuned')}</h3>
           <form>
             <input
               type="text"
@@ -59,7 +61,7 @@ class StayTuned extends React.Component<Props, MyState> {
               onChange={this.handleOnChange}
               value={this.state.name}
               required
-              placeholder="IMIĘ"
+              placeholder={this.props.t('name')}
             ></input>
             <input
               type="email"
@@ -67,22 +69,20 @@ class StayTuned extends React.Component<Props, MyState> {
               onChange={this.handleOnChange}
               value={this.state.email}
               required
-              placeholder="EMAIL"
+              placeholder={this.props.t('email')}
             ></input>
             <button type="submit" onClick={this.addToFirestore}>
-              Zapisz
-            </button>
+            {this.props.t('save')}            </button>
           </form>
         </div>
         <p>
-          Administratorem Państwa danych osobowych jest Natalia Malychaz
-          siedzibą w Gdyni. Dane wpisane w formularzu kontaktowym będą
-          przetwarzane w celu udzielenia odpowiedzi na przesłane zapytanie
-          zgodnie z klauzulą informacyjną dostępną w siedzibie Administratora
-          oraz na stronie internetowej.
+        {this.props.t('administr')} 
         </p>
       </div>
     );
   }
 }
-export default StayTuned;
+
+
+
+export default  withTranslation()(StayTuned);

@@ -368,6 +368,10 @@
   }
 }
 @media (max-width: 700px) {
+  .video-box::after {
+    width: 100vw;
+    height: 96vh;
+  }
   .header-about__title {
     flex-direction: column;
     p {

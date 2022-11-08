@@ -7,9 +7,13 @@ import natmain2 from "../../images/natmain2.webp";
 import Footer from "../footer/Footer";
 import OfferSlider from "./offerslider/OfferSlider";
 import StayTuned from "../utils/StayTuned";
+import { useTranslation } from "react-i18next";
+
 const Fade = require("react-reveal/Fade");
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <article className="main-container">
@@ -21,20 +25,18 @@ const Home = () => {
             allow="autoplay"
             className="main-video"
           ></iframe>
-        </div>{" "}
+        </div>
       </article>
       <article className="header-about">
-        {" "}
         <Fade bottom>
           <div className="header-about__title">
             <h3>
-              {" "}
-              Pierwszy krok <br />
-              do realizacji Twoich marzeń
+              {t("main-tit1")}
+              <br />
+              {t("main-tit2")}
             </h3>
             <p>
-              „Połączenie sił to początek, pozostanie razem to postęp,
-              <br /> wspólna praca to sukces” - Henry Ford
+              {t("main-hen1")} <br /> {t("main-hen2")}
             </p>
           </div>
         </Fade>
@@ -42,20 +44,12 @@ const Home = () => {
           <div className="header-about__text">
             <img src={natmain} alt="natmain" />
             <div className="about-text__container">
-              <h3>O MNIE</h3>
-              <h4>
-                Property Advisor & Branch Manager in Gdynia w firmie InVilla
-                Nieruchomości.
-              </h4>
-              <p>
-                Specjalizuje się w sprzedaży oraz najmie mieszkań i apartamentów
-                Premium w całym Trójmieście (Gdańsk, Sopot, Gdynia), oraz domów
-                segmentu Premium.
-              </p>
+              <h3> {t("about-head")}</h3>
+              <h4>{t("main-about-text1")}</h4>
+              <p>{t("main-about-text2")}</p>
 
               <Link to="/about">
-                {" "}
-                <button>Czytaj dalej</button>
+                <button> {t("read-more")}</button>
               </Link>
             </div>
           </div>
@@ -65,37 +59,24 @@ const Home = () => {
         <Fade bottom>
           <div className="header-service__title">
             <p>
-              Doświadczenie w branży umożliwia mi precyzyjnie dopasować
-              strategię działań do oczekiwań Klientów i sytuacji na rynku
-              nieruchomości.
+              {t("main-coop1")}
               <br />
-              Do każdej transakcji podchodzę indywidualnie – wiem że w każdej z
-              nich kryje się inna historia, za którą stoją konkretni ludzie.
+              {t("main-coop2")}{" "}
             </p>
             <h3>
-              Dlaczego warto <br /> ze mną współpracować?
+              {t("main-coop-head1")}
+              <br /> {t("main-coop-head2")}
             </h3>
           </div>
         </Fade>{" "}
         <Fade bottom>
           <div className="header-service__text">
             <div className="service-text__container">
-              <h3>O USŁUGACH</h3>
-              <h4>
-                W mojej pracy stawiam przede wszystkim na relacje z Klientami i
-                partnerstwo w biznesie. Nieruchomości to dla mnie przede
-                wszystkim ludzie i ich potrzeby.
-              </h4>
-              <p>
-                Większość moich Klientów trafia do mnie z polecenia. W życiu jak
-                i w pracy stawiam na jakość, nigdy na ilość. Specjalizuję się w
-                najmie oraz sprzedaży mieszkań i domów na terenie całego
-                Trójmiasta.
-              </p>
-
+              <h3> {t("main-serv-head")}</h3>
+              <h4>{t("main-serv-text1")}</h4>
+              <p>{t("main-serv-text2")}</p>
               <Link to="/service">
-                {" "}
-                <button>Czytaj dalej</button>
+                <button> {t("read-more")}</button>
               </Link>
             </div>
             <img src={servmain2} alt="services img" />
@@ -105,8 +86,8 @@ const Home = () => {
       <article className="main-tricity">
         <Fade bottom>
           <div className="header-tricity__title">
-            <h3>Idealne miejsce do życia...</h3>
-            <p>... a Ty już wybrałeś?</p>
+            <h3>{t("main-tri-tit")}</h3>
+            <p>{t("main-tri-tit2")}</p>
           </div>
         </Fade>
         <Fade bottom>
@@ -115,15 +96,12 @@ const Home = () => {
             <div className="tricity-text__container">
               <h3>TRÓJMIASTO</h3>
               <h4>
-                Trzy miasta położone wzdłuż polskiego wybrzeża Morza Bałtyckiego
-                tworzą obszar znany jako Trójmiasto:
+              {t("main-tri-text1")}
               </h4>
               <p>
-                nowoczesny port Gdynia, nadmorski kurort Sopot i historyczne
-                miasto Gdańsk, punkt zwrotny w historii świata.
-              </p>
+              {t("main-tri-text2")} </p>
               <Link to="/tricity">
-                <button>Czytaj dalej</button>
+                <button>{t("read-more")}</button>
               </Link>
             </div>
           </div>
@@ -133,8 +111,8 @@ const Home = () => {
         <OfferSlider />
       </Fade>{" "}
       <Fade bottom>
-      <StayTuned name="" email="" id="" initialState=""
- />      </Fade>{" "}
+        <StayTuned name="" email="" id="" initialState="" />{" "}
+      </Fade>{" "}
       <Fade bottom>
         <Footer />
       </Fade>
