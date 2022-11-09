@@ -68,7 +68,7 @@ export default function OfferSlider() {
             </>
           ))}
             {localStorage.getItem("i18nextLng") !== "en"  && datapl.map((offer, i) => (
-            <>
+            <div className="slider-conx">
               <div className="slider-offer" key={i + offer.id}>
                 <img src={offer.photo} alt={`${offer.id}`} />
                 <h1>{offer.name}</h1>
@@ -86,7 +86,7 @@ export default function OfferSlider() {
                   <button>{t("see-more")}</button>
                 </a>
               </div>
-            </>
+            </div>
           ))}
         </Slider>
       </div>

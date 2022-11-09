@@ -185,6 +185,7 @@ nav .menu-icon .nav-icon:after {
   display: flex;
   flex-direction: column;
   overflow-y: auto;
+  overflow-x: hidden;
   backface-visibility: hidden;
   min-height: 100vh;
   .stay-tuned__box {
@@ -381,10 +382,10 @@ nav .menu-icon .nav-icon:after {
   .navbar{
     padding: 30px 10px;
     img{
-      width: 173px;
+      width: 123px;
     }
     .media-box svg {
-      font-size: 16px;
+      font-size: 12px;
       padding: 4px;
     }
     h3{
@@ -400,13 +401,13 @@ nav .menu-icon .nav-icon:after {
     }
   }
   .navbar-white img{
-    width: 90px;
+    width: 70px;
     top: 30px;
   }
   .side-box{
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     padding-top: 100px;
     margin: 5px;
     .side-texts{
