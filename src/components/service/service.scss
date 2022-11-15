@@ -241,6 +241,11 @@
 }
 
 @media (max-width: 700px) {
+
+  .service-header__container{
+    width: 100vw;
+    padding: 0px 0px 50px;
+  }
   .service-header__container .service-img-box {
     h1 {
       font-size: 26px;

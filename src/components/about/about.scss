@@ -102,6 +102,13 @@
   }
 }
 @media (max-width: 700px) {
+  .about-head{
+    width: 100vw;
+    margin: 0px;
+    &::before{
+      width: 100vw;
+    }
+  }
   .about-head h1 {
     text-align: center;
   }

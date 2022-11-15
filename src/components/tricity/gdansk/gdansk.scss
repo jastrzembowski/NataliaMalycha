@@ -278,6 +278,15 @@
 }
 
 @media (max-width: 700px) {
+
+  .gda-header, .gdy-header, .sop-header {
+    width: 100vw;
+    margin: 0px 0px 60px;
+    &::before {
+      width: 100vw;
+    }
+  }
+
   .gda-about .gda-about__head,
   .gda-about .gdy-about__head,
   .gda-about .sop-about__head{
